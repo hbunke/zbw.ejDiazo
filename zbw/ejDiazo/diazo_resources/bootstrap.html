@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap, from Twitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <link
+    href='http://fonts.googleapis.com/css?family=Roboto:400,500,300,300italic,400italic,500italic,700,700italic'
+    rel='stylesheet' type='text/css' />
+
+    <link
+    href='http://fonts.googleapis.com/css?family=Lato:400,500,300,300italic,400italic,500italic,700,700italic'
+    rel='stylesheet' type='text/css' />
+
+<!-- Bootstrap 2.0.1, local
+    <link href="static/css/bootstrap.css" rel="stylesheet">
+    <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+-->
+
+<!-- Bootstrap CDN -->
+<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- Optional theme
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+-->
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!--
+    <link href="static/css/theme.css" rel="stylesheet">
+-->
+    <link href="static/css/ploneui.css" rel="stylesheet">
+    <link href="static/main.css" rel="stylesheet">
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-default">
+      <div class="navbar-inner">
+
+        <div class="container-fluid">
+            <!--
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+        -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Economics</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse" aria-expanded="true">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">ARTICLES</a></li>
+                    <li><a href="#">DISCUSSION PAPERS</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Special Areas
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Surveys and Overviews</a></li>
+                            <li><a href="#">Policy Papers</a></li>
+                            <li><a href="#">Replications</a></li>
+                            <li><a href="#">Special Issues</a></li>
+                            <li><a href="#">Topics</a></li>
+                            <li><a href="#">Data Sets</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Submission
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Submit a Paper</a></li>
+                            <li><a href="#">Instructions for Authors</a></li>
+                            <li><a href="#">Data Availability Policy</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            About
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Conception</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Events</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#"
+                            class="dropdown-toggle"
+                            data-toggle="dropdown">
+                            Account
+                            <b class="caret"></b>
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a href="#">Link</a></li>
+                      </ul>
+                    </li>
+                 </ul>
+
+             </div>
+        </div>
+        </div>
+    </div>
+
+
+<!--
+
+          <ul id="tabs" class="nav">
+            <li><a href="#">ARTICLES</a></li>
+            <li><a href="#">DISCUSSION PAPERS</a></li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    Special Areas
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Surveys and Overviews</a></li>
+                    <li><a href="#">Policy Papers</a></li>
+                    <li><a href="#">Replications</a></li>
+                    <li><a href="#">Special Issues</a></li>
+                    <li><a href="#">Topics</a></li>
+                    <li><a href="#">Data Sets</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    About
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-submenu">
+                        <a href="#">Submission</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Submit a Paper</a></li>
+                            <li><a href="#">Instructions for Authors</a></li>
+                            <li><a href="#">Data Availability Policy</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Conception</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </li>
+          </ul>
+
+          <ul id="account-info" class="nav pull-right">
+            <li class="dropdown">
+              <a href="#"
+                    class="dropdown-toggle"
+                    data-toggle="dropdown">
+                    Account
+                    <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                  <li>Link</li>
+              </ul>
+            </li>
+          </ul>
+          <form id="searchbox" class="navbar-search pull-right">
+            <input type="text" class="search-query" placeholder="Search">
+          </form>
+        </div>
+      </div>
+    </div>
+-->
+
+
+<div class="container"
+      <div class="row">
+        <div class="span2" id="left-column">
+         &nbsp;
+        </div>
+
+        <div class="span8" id="content">
+          <h1>Main content</h1>
+          <p>
+            Main content placeholder
+          </p>
+       </div>
+        <div class="span2" id="right-column">
+          &nbsp;
+        </div>
+
+      </div>
+
+</div> <!-- /container -->
+
+
+
+      <div id="footer" class="footer">
+          content
+      </div>
+
+
+  </body>
+<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+</html>
