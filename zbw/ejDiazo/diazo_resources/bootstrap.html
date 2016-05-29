@@ -8,34 +8,27 @@
     <meta name="author" content="">
 
 
-    <link
-    href='http://fonts.googleapis.com/css?family=Roboto:400,500,300,300italic,400italic,500italic,700,700italic'
-    rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,300italic,400italic,500italic,700,700italic' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
 
-    <link
-    href='http://fonts.googleapis.com/css?family=Lato:400,500,300,300italic,400italic,500italic,700,700italic'
-    rel='stylesheet' type='text/css' />
 
-<!-- Bootstrap 2.0.1, local
-    <link href="static/css/bootstrap.css" rel="stylesheet">
-    <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
--->
 
 <!-- Bootstrap CDN -->
-<!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <!-- Optional theme
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
 -->
-
-    <!-- Latest compiled and minified JavaScript -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 <!--
     <link href="static/css/theme.css" rel="stylesheet">
 -->
     <link href="static/css/ploneui.css" rel="stylesheet">
-    <link href="static/main.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/font-awesome.min.css">
+
 
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -50,14 +43,6 @@
       <div class="navbar-inner">
 
         <div class="container-fluid">
-            <!--
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-        -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
@@ -69,15 +54,15 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse" aria-expanded="true">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">ARTICLES</a></li>
-                    <li><a href="#">DISCUSSION PAPERS</a></li>
+                    <li id="journalarticles_link"><a href="#">ARTICLES</a></li>
+                    <li id="discussionpapers_link"><a href="#">DISCUSSION PAPERS</a></li>
 
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             Special Areas
                             <b class="caret"></b>
                         </a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu" id="special_areas_menu">
                             <li><a href="#">Surveys and Overviews</a></li>
                             <li><a href="#">Policy Papers</a></li>
                             <li><a href="#">Replications</a></li>
@@ -101,13 +86,29 @@
 
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            About
+                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                            &nbsp; About
                             <b class="caret"></b>
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Conception</a></li>
-                            <li><a href="#">Community</a></li>
-                            <li><a href="#">Events</a></li>
+                        <ul class="dropdown-menu" id="about_economics">
+                            <li><a href="#">Economics at a Glance</a></li>
+                            <li><a href="#">Aims and Scope</a></li>
+                            <li><a href="#">Review Process</a></li>
+                            <li><a href="#">Indexing and Abstracting Services</a></li>
+                            <li><a href="#">License Agreements</a></li>
+
+                            <li class="divider" role="separator"></li>
+                            <li class="dropdown-header">Community</li>
+                            <li><a href="#">Editorial Board</a></li>
+                            <li><a href="#">Advisory Board</a></li>
+                            <li><a href="#">Co-Editors</a></li>
+                            <li><a href="#">Authors</a></li>
+                            <li><a href="#">Registered Readers</a></li>
+
+                            <li class="divider" role="separator"></li>
+                            <li class="dropdown-header">Events</li>
+                            <li><a href="#">Workshop: The Future of Scholarly Communications in Economics</a></li>
+                            <li><a href="#">Prizes</a></li>
                         </ul>
                     </li>
 
@@ -134,70 +135,13 @@
 
 
 <!--
-
-          <ul id="tabs" class="nav">
-            <li><a href="#">ARTICLES</a></li>
-            <li><a href="#">DISCUSSION PAPERS</a></li>
-
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    Special Areas
-                    <b class="caret"></b>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Surveys and Overviews</a></li>
-                    <li><a href="#">Policy Papers</a></li>
-                    <li><a href="#">Replications</a></li>
-                    <li><a href="#">Special Issues</a></li>
-                    <li><a href="#">Topics</a></li>
-                    <li><a href="#">Data Sets</a></li>
-                </ul>
-            </li>
-
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    About
-                    <b class="caret"></b>
-                </a>
-                <ul class="dropdown-menu">
-                    <li class="dropdown-submenu">
-                        <a href="#">Submission</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Submit a Paper</a></li>
-                            <li><a href="#">Instructions for Authors</a></li>
-                            <li><a href="#">Data Availability Policy</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Conception</a></li>
-                    <li><a href="#">Community</a></li>
-                    <li><a href="#">Events</a></li>
-                </ul>
-            </li>
-          </ul>
-
-          <ul id="account-info" class="nav pull-right">
-            <li class="dropdown">
-              <a href="#"
-                    class="dropdown-toggle"
-                    data-toggle="dropdown">
-                    Account
-                    <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                  <li>Link</li>
-              </ul>
-            </li>
-          </ul>
           <form id="searchbox" class="navbar-search pull-right">
             <input type="text" class="search-query" placeholder="Search">
           </form>
-        </div>
-      </div>
-    </div>
 -->
 
 
-<div class="container"
+<div class="container">
       <div class="row">
         <div class="span2" id="left-column">
          &nbsp;
@@ -218,10 +162,18 @@
 </div> <!-- /container -->
 
 
-
       <div id="footer" class="footer">
           content
       </div>
+
+
+<!-- sticky footer
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container">
+    footer content
+  </div>
+</nav>
+-->
 
 
   </body>

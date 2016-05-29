@@ -29,6 +29,48 @@
         <!-- Logo -->
         <copy attributes="href" css:theme="#brand" css:content="#portal-logo" />
 
+        <replace css:theme-children="#journalarticles_link">
+            <a href="{$portal_url}/economics/journalarticles">ARTICLES</a>
+        </replace>
+        <replace css:theme-children="#discussionpapers_link">
+            <a href="{$portal_url}/economics/discussionpapers">DISCUSSION PAPERS</a>
+        </replace>
+
+
+
+
+        <!-- Special Areas Links -->
+        <replace css:theme-children="#special_areas_menu">
+            <li><a href="{$portal_url}/special-areas/surveys-and-overviews">Surveys and Overviews</a></li>
+            <li><a href="{$portal_url}/special-areas/policy-papers">Policy Papers</a></li>
+            <li><a href="{$portal_url}/special-areas/replications-1">Replications</a></li>
+            <li><a href="{$portal_url}/special-areas/special-issues">Special Issues</a></li>
+            <li><a href="{$portal_url}/special-areas/topics">Topics</a></li>
+            <li><a href="{$portal_url}/special-areas/data-sets">Data Sets</a></li>
+        </replace>
+
+        <!-- About / Info Links -->
+        <replace css:theme-children="#about_economics">
+            <li><a href="{$portal_url}/conception/economics-at-a-glance">Economics at a Glance</a></li>
+            <li><a href="#">Aims and Scope</a></li>
+            <li><a href="#">Review Process</a></li>
+            <li><a href="#">Indexing and Abstracting Services</a></li>
+            <li><a href="#">License Agreements</a></li>
+
+            <li class="divider" role="separator"></li>
+            <li class="dropdown-header">Community</li>
+            <li><a href="#">Editorial Board</a></li>
+            <li><a href="#">Advisory Board</a></li>
+            <li><a href="#">Co-Editors</a></li>
+            <li><a href="#">Authors</a></li>
+            <li><a href="#">Registered Readers</a></li>
+
+            <li class="divider" role="separator"></li>
+            <li class="dropdown-header">Events</li>
+            <li><a href="#">Workshop: The Future of Scholarly Communications in Economics</a></li>
+            <li><a href="#">Prizes</a></li>
+        </replace>
+
 
         <!-- Tabs
         <replace css:theme-children="#tabs" css:content-children="#portal-siteactions" />

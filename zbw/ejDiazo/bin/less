@@ -3,7 +3,7 @@
 var path = require('path'),
     nodeWatch = require('nodewatch'),
     exec = require('child_process').exec,
-    watch = path.join(__dirname, '..', 'diazo_resources', 'static'),
+    watch = path.join(__dirname, '..', 'diazo_resources', 'less'),
     lastArg = process.argv.slice().pop();
 
 function now() {
@@ -14,7 +14,7 @@ function compile(event, filename) {
   var start = Date.now(),
       filename = 'main.css';
 
-  exec('`npm bin`/lessc ' + __dirname + '/../diazo_resources/static/ej.less > ' + __dirname + '/../diazo_resources/static/' + filename, function (err, stdout, stderr) {
+  exec('`npm bin`/lessc ' + __dirname + '/../diazo_resources/less/main.less > ' + __dirname + '/../diazo_resources/' + filename, function (err, stdout, stderr) {
     var duration = Date.now() - start;
 
     if (err) {
