@@ -242,7 +242,9 @@ p {
 #edit-bar {
   border: 0.25em solid #CFD8DC;
   font-size: 100%;
+  /*font-family: @navFonts;*/
   font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 #contentActionMenus {
   background: #CFD8DC;
