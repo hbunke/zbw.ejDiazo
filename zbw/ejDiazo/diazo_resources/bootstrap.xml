@@ -37,8 +37,6 @@
         </replace>
 
 
-
-
         <!-- Special Areas Links -->
         <replace css:theme-children="#special_areas_menu">
             <li><a href="{$portal_url}/special-areas/surveys-and-overviews">Surveys and Overviews</a></li>
@@ -51,13 +49,18 @@
 
         <!-- About / Info Links -->
         <replace css:theme-children="#about_economics">
-            <li><a href="{$portal_url}/conception/economics-at-a-glance">Economics at a Glance</a></li>
-            <li><a href="#">Aims and Scope</a></li>
-            <li><a href="#">Review Process</a></li>
-            <li><a href="#">Indexing and Abstracting Services</a></li>
-            <li><a href="#">License Agreements</a></li>
+            <li class="dropdown-header" style="margin-top: -5px;">About</li>
+            <!-- <li><a href="{$portal_url}/conception/economics-at-a-glance">Economics at a Glance</a></li> -->
+            <li><a href="{$portal_url}/conception/aims-and-scope">Aims and Scope</a></li>
+            <li><a href="{$portal_url}/conception/review-process">Review Process</a></li>
+            <li><a href="{$portal_url}/conception/archiving-and-dissemination">Indexing and Abstracting Services</a></li>
+            <li><a href="{$portal_url}/conception/license-agreements">License Agreements</a></li>
 
-            <li class="divider" role="separator"></li>
+            <li class="dropdown-header">Submission</li>
+            <li><a href="#">Submit a Paper</a></li>
+            <li><a href="#">Instructions for Authors</a></li>
+            <li><a href="#">Data Availability Policy</a></li>
+
             <li class="dropdown-header">Community</li>
             <li><a href="#">Editorial Board</a></li>
             <li><a href="#">Advisory Board</a></li>
@@ -65,12 +68,36 @@
             <li><a href="#">Authors</a></li>
             <li><a href="#">Registered Readers</a></li>
 
-            <li class="divider" role="separator"></li>
             <li class="dropdown-header">Events</li>
             <li><a href="#">Workshop: The Future of Scholarly Communications in Economics</a></li>
             <li><a href="#">Prizes</a></li>
         </replace>
 
+
+        <replace css:theme-children="#login_menu" css:content-children="#login_menu" href="@@ej_components" />
+        <copy content='//*[@id="user_menu_title"]' theme='//*[@id="login_title"]' href="@@ej_components" />
+
+        <before css:theme="#user_menu" if="$manager">
+            <li class="dropdown" id="manager_menu" >
+                <a href="#"
+                    class="dropdown-toggle"
+                    data-toggle="dropdown">
+                    <i class="fa fa-cog" aria-hidden="true"></i>
+
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu" id="manager_links">
+                    <li><a href="{$portal_url}/plone_control_panel">Site Setup</a></li>
+                    <li><a href="{$portal_url}/download-registered-readers">Download Readers</a></li>
+                    <li><a href="{$portal_url}/member_search">Member Search</a></li>
+                    <li><a href="{$portal_url}/stats">Statistics</a></li>
+                </ul>
+            </li>
+        </before>
+
+<!--
+        <replace css:theme-children="#search" css:content="#searchbox" />
+    -->
 
         <!-- Tabs
         <replace css:theme-children="#tabs" css:content-children="#portal-siteactions" />
@@ -83,10 +110,10 @@
 
 
 
-        <!-- Search
+        <!-- Search -->
         <copy attributes="action" css:theme="#searchbox" css:content="#portal-searchbox form" />
-        <copy attributes="name" css:theme="#searchbox .search-query" css:content="#portal-searchbox form .searchField" />
-    -->
+        <copy attributes="name" css:theme="#searchbox .search-quer" css:content="#portal-searchbox form .searchField" />
+
 
         <!-- Edit bar -->
         <before css:theme-children="#content" css:content="#edit-bar" />

@@ -39,10 +39,41 @@
 
   <body>
 
+<!--
+      <div class="navbar navbar-default ej-head">
+        <div class="navbar-inner">
+
+          <div class="container-fluid">
+              <div class="navbar-header">
+                  <a class="navbar-brand" href="#">Economics</a>
+              </div>
+              <div id="navbar">
+                  <ul class="nav navbar-nav navbar-right">
+                      <li id="search">
+                          <form class="navbar-form ej-search" role="search">
+                              <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term" />
+                          </form>
+                      </li>
+
+
+                  </ul>
+
+
+               </div>
+          </div>
+          </div>
+      </div>
+-->
+
+
+
+<!--  ende test -->
+
     <div class="navbar navbar-default">
       <div class="navbar-inner">
 
         <div class="container-fluid">
+
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
@@ -52,7 +83,9 @@
                 </button>
                 <a class="navbar-brand" href="#">Economics</a>
             </div>
+
             <div id="navbar" class="navbar-collapse collapse" aria-expanded="true">
+
                 <ul class="nav navbar-nav">
                     <li id="journalarticles_link"><a href="#">ARTICLES</a></li>
                     <li id="discussionpapers_link"><a href="#">DISCUSSION PAPERS</a></li>
@@ -63,70 +96,58 @@
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu" id="special_areas_menu">
-                            <li><a href="#">Surveys and Overviews</a></li>
-                            <li><a href="#">Policy Papers</a></li>
-                            <li><a href="#">Replications</a></li>
-                            <li><a href="#">Special Issues</a></li>
-                            <li><a href="#">Topics</a></li>
-                            <li><a href="#">Data Sets</a></li>
+                            <li>replaced by diazo rules</li>
                         </ul>
                     </li>
 
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Submission
-                            <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Submit a Paper</a></li>
-                            <li><a href="#">Instructions for Authors</a></li>
-                            <li><a href="#">Data Availability Policy</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-info-circle" aria-hidden="true"></i>
-                            &nbsp; About
-                            <b class="caret"></b>
+                            <i class="fa fa-info-circle fa-lg" aria-hidden="true"></i>
+                            <!--<b class="caret"></b>-->
                         </a>
                         <ul class="dropdown-menu" id="about_economics">
-                            <li><a href="#">Economics at a Glance</a></li>
-                            <li><a href="#">Aims and Scope</a></li>
-                            <li><a href="#">Review Process</a></li>
-                            <li><a href="#">Indexing and Abstracting Services</a></li>
-                            <li><a href="#">License Agreements</a></li>
-
-                            <li class="divider" role="separator"></li>
-                            <li class="dropdown-header">Community</li>
-                            <li><a href="#">Editorial Board</a></li>
-                            <li><a href="#">Advisory Board</a></li>
-                            <li><a href="#">Co-Editors</a></li>
-                            <li><a href="#">Authors</a></li>
-                            <li><a href="#">Registered Readers</a></li>
-
-                            <li class="divider" role="separator"></li>
-                            <li class="dropdown-header">Events</li>
-                            <li><a href="#">Workshop: The Future of Scholarly Communications in Economics</a></li>
-                            <li><a href="#">Prizes</a></li>
+                            <li>replaced by diazo rules</li>
                         </ul>
                     </li>
+
+                    <!-- Search -->
+                    <li id="search_icon_link">
+                        <a href="#ejsearch" data-toggle="collapse" aria-expanded="false" aria-controls="ejsearch">
+                            <i class="fa fa-search" />
+                        </a>
+                    </li>
+                    <li>
+                        <form id="ejsearch" class="navbar-form collapse ej-search" role="search">
+                            <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term" />
+                        </form>
+                    </li>
+
 
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
+
+
+                    <!-- user menu -->
+                    <li class="dropdown" id="user_menu">
                         <a href="#"
                             class="dropdown-toggle"
                             data-toggle="dropdown">
-                            Account
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            &nbsp;
+                            <span id="login_title">hallo welt</span>
                             <b class="caret"></b>
                       </a>
-                      <ul class="dropdown-menu">
+                      <ul class="dropdown-menu" id="login_menu">
                           <li><a href="#">Link</a></li>
                       </ul>
                     </li>
-                 </ul>
+
+
+
+
+                </ul>
+
 
              </div>
         </div>

@@ -1,0 +1,15 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    >
+
+<browser:page
+    for="*"
+    name="ej_components"
+    class=".ej_components.View"
+    permission="zope2.Public"
+    />
+
+</configure>

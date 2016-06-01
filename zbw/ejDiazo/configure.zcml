@@ -16,6 +16,8 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+ <include package=".browser" />   
+
   <plone:static
     directory="diazo_resources"
     type="theme"

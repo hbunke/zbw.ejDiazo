@@ -11,11 +11,7 @@
 @secondaryTextColor: #727272;
 @dividerColor:       #B6B6B6;
 
-
-
-@ploneEditBarColor: @lightPrimaryColor;
-/*@ploneEditBarColor: #f57c00;*/
-
+@ploneEditBarColor: @primaryColor;
 
 @roboto: 'Roboto', sans-serif;
 @lato: 'Lato', sans-serif;
@@ -52,7 +48,7 @@ body, p {
 .navbar .nav > li > a {
     color: @textPrimaryColor;
     font-family: @navFonts;
-    font-size: 1.1em;
+    font-size: 1.5rem;
 }
 
 .dropdown-menu {
@@ -60,15 +56,31 @@ body, p {
     font-family: @navFonts;
 }
 
-.dropdown-menu > li >, .navbar-default .navbar-nav > li >, .navbar-default .navbar-nav > .open > {
+.dropdown-menu > li >, .navbar-default .navbar-nav > li >,
+.navbar-default .navbar-nav > .open > {
     a:focus, a:hover {
         background-color: @accentColor;
         color:@textPrimaryColor;
     };
 }
 
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+     @media (max-width: 768px) {
+         color: @textPrimaryColor;
+     };
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+	color: @textPrimaryColor;
+    background-color: @accentColor;
+}
+
 .dropdown-header {
-    color: @accentColor;
+     /*color: @accentColor;*/
+     background-color: @primaryColor;
+     color: @textPrimaryColor;
+     font-size: 1em;
+     font-weight: 500;
 }
 
 .divider {
@@ -87,21 +99,25 @@ body, p {
 #edit-bar {
     border: 0.25em solid @ploneEditBarColor;
     font-size:100%;
-    /*font-family: @navFonts;*/
     font-family: @navFonts;
     font-weight: 400;
+    border-radius: 10px;
+    margin-top: -20px;
 }
 
+#content-views {
+    border-radius: 10px;
+}
 
 #contentActionMenus {
     background: @ploneEditBarColor;
-    border-radius: 0px;
+    border-radius: 10px;
     dl.actionMenu.activated dd {
         border-bottom: 0.5em solid @ploneEditBarColor;
     };
     dl.actionMenu a, dl.actionMenu.activated dd {
     	background-color: @ploneEditBarColor;
-    	color: @secondaryTextColor;
+    	color: @textPrimaryColor;
     	z-index: 5;
     };
 
@@ -113,16 +129,33 @@ body, p {
 	text-decoration: none;
 	border: none;
 	margin: 0;
-    color: @secondaryTextColor;
+    color: @textPrimaryColor;
 }
 
-#content-views li.selected a, #content-views li a:hover, #content li.formTab a.selected, #content li.formTab a:hover {
+#content-views li.selected a, #content-views li a:hover, #content li.formTab a.selected,
+ #content li.formTab a:hover {
 	background: @accentColor;
 	color: @textPrimaryColor;
-    border-top-right-radius: 0em;
-	border-top-left-radius: 0em;
 }
 
 #content ul.formTabs {
-    background-color: @lightPrimaryColor;
+    background-color: @accentColor;
+}
+
+.navbar-form  {
+    width: auto;
+}
+
+.ej-search {
+    margin-left: -15px;
+
+}
+
+.ej-head {
+    margin-bottom: 0px !important;
+    border-bottom: 0px solid @darkPrimaryColor !important;
+}
+
+.navbar-default {
+    border-color: @darkPrimaryColor;
 }
