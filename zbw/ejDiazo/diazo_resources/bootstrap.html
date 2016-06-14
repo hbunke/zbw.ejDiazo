@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Bootstrap, from Twitter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,22 +10,18 @@
 
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,300italic,400italic,500italic,700,700italic' rel='stylesheet' type='text/css' />
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
 
-
-
-<!-- Bootstrap CDN -->
+    <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <!-- Optional theme
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
 -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-<!--
-    <link href="static/css/theme.css" rel="stylesheet">
--->
+    <!--
+    <link href="static/css/theme.css" rel="stylesheet"> -->
+
     <link href="static/css/ploneui.css" rel="stylesheet">
     <link href="main.css" rel="stylesheet">
     <link rel="stylesheet" href="static/css/font-awesome.min.css">
@@ -35,11 +32,11 @@
     <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-  </head>
+</head>
 
-  <body>
+<body>
 
-<!--
+    <!--
       <div class="navbar navbar-default ej-head">
         <div class="navbar-inner">
 
@@ -65,130 +62,128 @@
       </div>
 -->
 
-
-
-<!--  ende test -->
+    <!--  ende test -->
 
     <div class="navbar navbar-default">
-      <div class="navbar-inner">
+        <div class="navbar-inner">
 
-        <div class="container-fluid">
+            <div class="container-fluid">
 
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Economics</a>
-            </div>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
 
-            <div id="navbar" class="navbar-collapse collapse" aria-expanded="true">
+                    <!-- LOGO replaced by Diazo -->
+                    <a class="navbar-brand" id="logo" href="#">Economics</a>
 
-                <ul class="nav navbar-nav">
-                    <li id="journalarticles_link"><a href="#">ARTICLES</a></li>
-                    <li id="discussionpapers_link"><a href="#">DISCUSSION PAPERS</a></li>
+                </div>
 
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <div id="navbar" class="navbar-collapse collapse" aria-expanded="true">
+
+                    <ul class="nav navbar-nav">
+                        <li id="journalarticles_link"><a href="#">ARTICLES</a></li>
+                        <li id="discussionpapers_link"><a href="#">DISCUSSION PAPERS</a></li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             Special Areas
                             <b class="caret"></b>
                         </a>
-                        <ul class="dropdown-menu" id="special_areas_menu">
-                            <li>replaced by diazo rules</li>
-                        </ul>
-                    </li>
+                            <ul class="dropdown-menu" id="special_areas_menu">
+                                <li>replaced by diazo rules</li>
+                            </ul>
+                        </li>
 
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-info-circle fa-lg" aria-hidden="true"></i>
-                            <!--<b class="caret"></b>-->
-                        </a>
-                        <ul class="dropdown-menu" id="about_economics">
-                            <li>replaced by diazo rules</li>
-                        </ul>
-                    </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-info-circle fa-lg" aria-hidden="true"></i>
+                                <!--<b class="caret"></b>-->
+                            </a>
+                            <ul class="dropdown-menu" id="about_economics">
+                                <li>replaced by diazo rules</li>
+                            </ul>
+                        </li>
 
-                    <!-- Search -->
-                    <li id="search_icon_link">
-                        <a href="#ejsearch" data-toggle="collapse" aria-expanded="false" aria-controls="ejsearch">
-                            <i class="fa fa-search" />
-                        </a>
-                    </li>
-                    <li>
-                        <form id="ejsearch" class="navbar-form collapse ej-search" role="search">
-                            <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term" />
-                        </form>
-                    </li>
-
-
-                </ul>
-
-                <ul class="nav navbar-nav navbar-right">
+                        <!-- Search -->
+                        <li id="search_icon_link">
+                            <a href="#ejsearch" data-toggle="collapse" aria-expanded="false" aria-controls="ejsearch">
+                                <i class="fa fa-search" />
+                            </a>
+                        </li>
+                        <li>
+                            <form id="ejsearch" class="navbar-form collapse ej-search" role="search">
+                                <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term" />
+                            </form>
+                        </li>
 
 
-                    <!-- user menu -->
-                    <li class="dropdown" id="user_menu">
-                        <a href="#"
-                            class="dropdown-toggle"
-                            data-toggle="dropdown">
-                            <i class="fa fa-user" aria-hidden="true"></i>
-                            &nbsp;
-                            <span id="login_title">hallo welt</span>
-                            <b class="caret"></b>
-                      </a>
-                      <ul class="dropdown-menu" id="login_menu">
-                          <li><a href="#">Link</a></li>
-                      </ul>
-                    </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+
+
+                        <!-- user menu -->
+                        <li class="dropdown" id="user_menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-user" aria-hidden="true"></i> &nbsp;
+                                <span id="login_title">hallo welt</span>
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu" id="login_menu">
+                                <li><a href="#">Link</a></li>
+                            </ul>
+                        </li>
 
 
 
 
-                </ul>
+                    </ul>
 
 
-             </div>
-        </div>
+                </div>
+            </div>
         </div>
     </div>
 
 
-<!--
+    <!--
           <form id="searchbox" class="navbar-search pull-right">
             <input type="text" class="search-query" placeholder="Search">
           </form>
 -->
 
 
-<div class="container">
-      <div class="row">
-        <div class="span2" id="left-column">
-         &nbsp;
+    <div class="container">
+
+
+        <div class="row">
+
+            <div class="col-md-12" id="content">
+                <h1>Main content</h1>
+
+                <p>
+                    Main content placeholder
+                </p>
+            </div>
+
+
         </div>
 
-        <div class="span8" id="content">
-          <h1>Main content</h1>
-          <p>
-            Main content placeholder
-          </p>
-       </div>
-        <div class="span2" id="right-column">
-          &nbsp;
-        </div>
-
-      </div>
-
-</div> <!-- /container -->
+    </div>
 
 
-      <div id="footer" class="footer">
-          content
-      </div>
 
 
-<!-- sticky footer
+    <div id="footer" class="footer">
+        FOOTER
+    </div>
+
+
+    <!-- sticky footer
 <nav class="navbar navbar-default navbar-fixed-bottom">
   <div class="container">
     footer content
@@ -197,6 +192,7 @@
 -->
 
 
-  </body>
+</body>
 <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+
 </html>

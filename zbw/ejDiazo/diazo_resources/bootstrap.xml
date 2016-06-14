@@ -36,6 +36,9 @@
             <a href="{$portal_url}/economics/discussionpapers">DISCUSSION PAPERS</a>
         </replace>
 
+        <replace css:theme="#logo">
+            <a class="navbar-brand" id="logo" href="{$portal_url}">Economics</a>
+        </replace>
 
         <!-- Special Areas Links -->
         <replace css:theme-children="#special_areas_menu">
@@ -133,6 +136,9 @@
 <!--
         <after css:theme-children="#footer" css:content="#portal-siteactions" />
     -->
+
+
+    <!--<replace css:theme-children="#abstract" css:content-children="#abstract" href="@@ej_components" />-->
 
     </rules>
 

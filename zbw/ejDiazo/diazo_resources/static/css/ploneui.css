@@ -650,11 +650,6 @@ dl.collapsedInlineCollapsible dt.collapsibleHeader {
     margin: 1em;
 }
 
-.label {
-    font-weight: bold;
-    display: inline;
-    padding-right: 0.5em;
-}
 .optionsToggle {
     border: 0.1em solid #8cacbb;
     color: Black;
@@ -740,12 +735,7 @@ textarea:focus {
     padding: 0.5em;
     font-size: 85%;
 }
-label {
-    font-weight:bold;
-}
 
-#content label {
-}
 
 #content optgroup {
     font-style: normal;
@@ -966,9 +956,11 @@ div.overlay #createGroup fieldset { border: none; }
 div.overlay p {
     margin-bottom: 1em;
 }
+
 div.overlay label {
     margin-bottom: 0.25em;
 }
+
 div.overlay a:hover {
     color: #75ad0a;
 }
@@ -1034,10 +1026,6 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 
 #content li.formTab a.selected {
     border-bottom: solid white 1px;
-}
-
-#content label {
-    display: inline-block;
 }
 
 #content input {

@@ -14,6 +14,7 @@ from zope.component import getMultiAdapter
 
 
 class View(BrowserView):
+
     """
     view for single components in ej diazo theme
     """
@@ -22,16 +23,19 @@ class View(BrowserView):
 
     def __call__(self):
         context = self.context = self.context.aq_inner
-        self.portal_state = getMultiAdapter((context, self.request), name=u'plone_portal_state')
+        self.portal_state = getMultiAdapter(
+            (context, self.request), name=u'plone_portal_state')
         return self.template()
 
     def is_anonymous(self):
-        portal_membership = getToolByName(self.context, 'portal_membership', None)
+        portal_membership = getToolByName(
+            self.context, 'portal_membership', None)
         return portal_membership.isAnonymousUser()
 
     def user_name(self):
 
-        tools = getMultiAdapter((self.context, self.request), name=u'plone_tools')
+        tools = getMultiAdapter(
+            (self.context, self.request), name=u'plone_tools')
         member = self.portal_state.member()
         member_info = tools.membership().getMemberInfo(member.getId())
         userid = member.getId()

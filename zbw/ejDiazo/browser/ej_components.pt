@@ -34,3 +34,19 @@
 
 
 </tal:block>
+
+<!--
+<div id="abstract">
+    <a href="#ejournal-abstract" data-toggle="collapse">
+        <h2 class="ejournal-abstract-title">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            Abstract
+        </h2>
+    </a>
+    <div id="ejournal-abstract" class="collapse.in"
+        property="schema:description"
+        tal:content=" structure here/getAbstract"
+        tal:condition="here/getAbstract">
+        Description
+</div>
+-->

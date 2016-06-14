@@ -2,62 +2,57 @@
 
 
 #ejournal-paper-title {
-    margin-top:2.5em;
+    margin-top:4em;
 }
 
 #ejournal-paper-title .authors {
     /*   font-size: 1.15em;*/
-    font-size:14px;
-    font-weight: normal;
-    color: rgb(75,75,75);
+    font-size: 2rem;
 }
 
 #ejournal-paper-title .title {
     /*    font-size: 1.38em; */
-    font-size:18px;
+    font-size: 4rem;
     font-weight: normal;
-    color:black;
 }
 
 #id_date {
     text-align:left;
-    /*    font-size:0.9em; */
-    font-size:11px;
-
+    font-size: 1.1em;
+    line-height: 0.6em;
 }
 
 #corresponding_link {
     float:right;
     width:auto;
+    color: @primaryColor;
 }
 
-#corresponding_link a {
-    /*    font-size:0.9em; */
-    font-size:11px;
-}
 
 
 div.special-issue {
-    /*    font-size:0.9em; */
-    font-size:11px;
-
+    color: @secondaryTextColor;
+    font-size:2rem;
     margin-top:6px;
 }
 
-/*
+
+
 #ejournal-document-actions {
-    font-size:11px;
-    width:auto;
-    margin:2.1em 0em -1.25em 0em;
-    border-top:1px solid rgb(179,197,214);
-    padding-top:5px;
+    margin-top: 1.5em;
+    padding: 5px;
+    /*border-bottom: 1px solid @lightPrimaryColor;
+    border-top: 1px solid @lightPrimaryColor;
+    */
+    text-align: center;
+    font-size: 2rem;
 
+    a {
+        font-size: 2rem;
+        color: @darkPrimaryColor;
+    };
 }
-*/
 
-#ejournal-document-actions a {
-/*    color: rgb(75,75,75);*/
-}
 
 
 /*comment*/
@@ -168,15 +163,13 @@ a.searchresult {
 
 /* ----------- 2. paperlist  ------------------------*/
 .paperlist_id {
-
-    font-weight:normal;
+    color: @primaryColor;
 }
 
 .paperlist_details {
-    color: rgb(75,75,75);
-    /*    font-size:0.9em; */
-    font-size:11px;
-    padding-bottom:3px;
+    color: @secondaryTextColor;
+    font-size:0.9em;
+    padding-bottom:1em;
 }
 
 .paperlist_left {
@@ -199,36 +192,21 @@ a.searchresult {
     text-align:center;
 }
 
-.eJournal_sorted_by span {
-/*     font-size:0.9em; */
-    font-size:11px;
-}
+//
+// .eJournal_sorted_by span {
+// /*     font-size:0.9em; */
+//     font-size:11px;
+// }
 
 .eJournal_sorted_by select {
-    margin-right:7px;
-    border:1px solid rgb(179,197,214);
-    /*font-size:0.9em; */
-    font-size:11px;
+    margin-right:20px;
+
 }
 
-
-.eJournal_paper_list {
-    width: 100%;
-}
 
 
 .eJournal_paper_list td {
     vertical-align: top;
-}
-
-
-.accepted, .accepted a:visited {
-    color:green !important;
-    font-weight:bold;
-}
-
-.accepted a:hover {
-color:#800000 !important;
 }
 
 
@@ -253,4 +231,39 @@ color:#800000 !important;
 /* honeypot */
 #formfield-form-honeypot, .assimilatethis {
     display:None;
+}
+
+
+h2 {
+    font-size: 3rem;
+}
+
+/* ignore block style from Word */
+#ejournal-abstract p {
+    text-align: left !important;
+}
+
+#assessment_line {
+    text-align: center;
+    font-size:2.75rem;
+    color: @primaryColor;
+    margin-top:50px;
+    a {
+        color: @primaryColor;
+    };
+    li {
+        display: inline;
+        margin-right: 10px;
+    };
+}
+
+#versions li {
+    font-size: @baseFontSize;
+    display: inline;
+    margin-right: 20px;
+}
+
+#journalarticle_link {
+    margin-top: 1.5em;
+    font-size:@baseFontSize;
 }
