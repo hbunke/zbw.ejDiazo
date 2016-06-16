@@ -37,7 +37,7 @@
         </replace>
 
         <replace css:theme="#logo">
-            <a class="navbar-brand" id="logo" href="{$portal_url}">Economics</a>
+            <a class="navbar-brand" id="logo" href="{$portal_url}">ECONOMICS</a>
         </replace>
 
         <!-- Special Areas Links -->
@@ -129,9 +129,14 @@
         <!--<replace css:content-children="#portal-column-one" css:theme-children="#left-column" />-->
         <!--<replace css:content-children="#portal-column-two" css:theme-children="#right-column" />-->
 
-        <!-- Footer
-        <replace css:theme-children="#footer" css:content-children="#portal-footer" />
-    -->
+
+        <replace css:theme-children="#footnav">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">LEGAL</a></li>
+            <li><a href="#">CONTACT &amp; SUGGESTIONS</a></li>
+            <li><a href="#">ALERTING SERVICE</a></li>
+        </replace>
+
 
 <!--
         <after css:theme-children="#footer" css:content="#portal-siteactions" />

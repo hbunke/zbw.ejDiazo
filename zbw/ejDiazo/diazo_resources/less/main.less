@@ -23,7 +23,7 @@
 @lora: 'Lora', serif;
 @slab: 'Roboto Slab', serif;
 
-@navFonts: @roboto;
+@navFonts: @lato;
 @textFonts: @lato;
 
 @baseFontSize: 1.4em;
@@ -46,9 +46,21 @@ body, p, td {
 #footer {
     background-color: @darkPrimaryColor;
     color: @lightPrimaryColor;
-    font-size: 5rem;
+    // font-size: 5rem;
     text-align: center;
+    font-family: @navFonts;
+    // padding: 3px;
+    a {
+        color: @textPrimaryColor
+    };
 }
+
+.footer-links {
+    margin-top:1em;
+    padding: 10px;
+}
+
+
 
 .navbar, .navbar-inner, .navbar-default {
     background: @darkPrimaryColor;
@@ -232,4 +244,45 @@ a i.fa, li i.fa {
     ul {
         padding-left: 0px;
     };
+}
+
+.discussible {
+    color: @primaryColor;
+}
+
+
+.listingBar {
+    margin: 2em 0 3em 0;
+    text-align: center;
+
+    .next {
+        display: inline-block;
+        float: right;
+    };
+    .previous {
+        display: inline-block;
+    };
+    a {
+        display: inline-block;
+        padding: 0.5em 1em;
+        border: 0.1em solid @dividerColor;
+    };
+    a:hover {
+        background-color: @accentColor;
+        color: @textPrimaryColor;
+    };
+
+}
+
+#sorted_by_form {
+    background-color: @lightPrimaryColor;
+    select {
+        margin-right: 25px;
+    };
+}
+
+input[type='submit'] {
+    background-color: @accentColor;
+    color: @textPrimaryColor;
+    font-weight:  bold;
 }
