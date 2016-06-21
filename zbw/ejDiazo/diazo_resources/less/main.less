@@ -220,13 +220,13 @@ a i.fa, li i.fa {
 
 }
 
-.paper_list_item .label {
-    line-height:1.5 !important;
-    font-size: 1em;
-}
 
 .paper_list_item {
-    font-size: @baseFontSize
+    font-size: @baseFontSize;
+    .label {
+        line-height:1.5 !important;
+        font-size: 1em;
+    };
 }
 
 .eJournal_paper_list .pagination {
