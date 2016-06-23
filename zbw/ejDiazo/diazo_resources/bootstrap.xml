@@ -60,20 +60,20 @@
             <li><a href="{$portal_url}/conception/license-agreements">License Agreements</a></li>
 
             <li class="dropdown-header">Submission</li>
-            <li><a href="#">Submit a Paper</a></li>
-            <li><a href="#">Instructions for Authors</a></li>
-            <li><a href="#">Data Availability Policy</a></li>
+            <li><a href="{$portal_url}/submission/submit-article">Submit a Paper</a></li>
+            <li><a href="{$portal_url}/submission/guidelines-for-authors">Instructions for Authors</a></li>
+            <li><a href="{$portal_url}/submission/data-availability-policy">Data Availability Policy</a></li>
 
             <li class="dropdown-header">Community</li>
-            <li><a href="#">Editorial Board</a></li>
-            <li><a href="#">Advisory Board</a></li>
-            <li><a href="#">Co-Editors</a></li>
-            <li><a href="#">Authors</a></li>
-            <li><a href="#">Registered Readers</a></li>
+            <li><a href="{$portal_url}/community/editorial-board">Editorial Board</a></li>
+            <li><a href="{$portal_url}/community/advisory-board">Advisory Board</a></li>
+            <li><a href="{$portal_url}/community/co-editors">Co-Editors</a></li>
+            <li><a href="{$portal_url}/community/authors">Authors</a></li>
+            <li><a href="{$portal_url}/community/registered-readers">Registered Readers</a></li>
 
             <li class="dropdown-header">Events</li>
-            <li><a href="#">Workshop: The Future of Scholarly Communications in Economics</a></li>
-            <li><a href="#">Prizes</a></li>
+            <li><a href="{$portal_url}/events-1/scholeco15">Workshop: The Future of Scholarly Communications in Economics</a></li>
+            <li><a href="{$portal_url}/community/events-1/prizes">Prizes</a></li>
         </replace>
 
 
