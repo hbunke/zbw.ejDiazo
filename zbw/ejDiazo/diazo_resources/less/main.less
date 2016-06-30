@@ -14,6 +14,7 @@
 @red: #d32f2f;
 @green: #00796b;
 
+
 @yellow: #ffa000;
 // @yellow: #fbc02d;
 @ploneEditBarColor: @primaryColor;
@@ -27,6 +28,10 @@
 @textFonts: @lato;
 
 @baseFontSize: 1.4em;
+
+.grey {
+    color: @secondaryTextColor;
+}
 
 body, p, td {
     font-family: @textFonts;
@@ -213,11 +218,12 @@ a i.fa, li i.fa {
 
 .label-ja {
     background-color: @green;
+    font-size:1em;
 }
 
 .label-dp {
-    background-color: @primaryColor;
-
+    background-color: @yellow;
+    font-size: 1em;
 }
 
 
@@ -285,4 +291,77 @@ input[type='submit'] {
     background-color: @accentColor;
     color: @textPrimaryColor;
     font-weight:  bold;
+}
+
+.jumbotron {
+    background-color: @lightPrimaryColor;
+    color: @primaryColor;
+    text-align: center;
+}
+
+.ej_section {
+    // h2, i {
+    //     color: @primaryColor;
+    // };
+    h2 {
+    //     text-align:center;
+    //     display: inline;
+        padding-left: 12px;
+    };
+    margin-bottom: 5em;
+}
+
+.ej_feature {
+    img {
+        float: left;
+    //     margin-right: 20px;
+    //     min-width: 33%;
+    //     max-width: 50%;
+    };
+    i {
+        color: @primaryColor;
+    };
+    margin-bottom: 5em;
+}
+
+#sections {
+    h2 {
+    //     color: @primaryColor;
+        display: inline;
+    //     padding-left: 12px;
+    };
+    // i {
+    //     opacity: 0.75;
+    // };
+    font-weight: 300;
+}
+
+// #section-ja {
+//     h2, i {
+//         color: @green;
+//     };
+//
+// }
+
+#section-ja {
+    background-color: @green;
+    color: @textPrimaryColor;
+    padding: 10px;
+};
+
+
+#section-dp {
+    background-color: @yellow;
+    color: @textPrimaryColor;
+    padding: 10px;
+}
+
+.ej-section-text {
+    padding: 12px;
+    border: 1px solid @dividerColor;
+}
+
+.latest {
+    margin-top:24px;
+
 }

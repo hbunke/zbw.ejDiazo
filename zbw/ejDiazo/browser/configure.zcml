@@ -12,4 +12,10 @@
     permission="zope2.Public"
     />
 
+<browser:page
+    for="*"
+    name="home"
+    class=".home.View"
+    permission="zope2.Public" />
+
 </configure>

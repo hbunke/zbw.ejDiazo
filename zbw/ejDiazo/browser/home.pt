@@ -1,0 +1,132 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+<body>
+
+
+
+
+<div metal:fill-slot="main">
+
+<div class="jumbotron jumbotron-home">
+    <div class="container">
+        <h1>ECONOMICS E-JOURNAL (LOGO)</h1>
+        <p>Economics is a pathbreaking journal that adopts an open source
+        approach to publication, viewing research as a cooperative enterprise between authors,
+        editors, referees, and readers. [Aims and Scope] You are strongly encouraged to join the
+        journal's community and become a registered reader. As such, you can comment on articles.
+        And, of course, you can always submit a paper.</p>
+    </div>
+</div>
+
+
+
+<div class="container" id="sections">
+
+    <div class="row">
+        <div class="col-md-12" id="featured">
+            <!-- <i class="fa fa-star-o fa-3x" aria-hidden="true"></i>
+            <h2>Featured</h2> -->
+            <h3>Feature Block -- Perhaps and Maybe Long Long Article Title with many meaningless words, questions and
+            teasing vocabulary</h3>
+
+            <div class="ej_feature">
+                <img src="++theme++zbw.ejDiazo/static/img/example.png" class="img-responsive"/>
+                <p>Passender Teaser Text zum Artikel und Bild. Im Feature können auch hervorhebenswerte
+                    Announcements oder besondere Hinweise stehen. Es sollte immer eine Grafik dabei sein.
+                Nulla anim velit laborum
+                consequat sint magna nulla excepteur amet tempor reprehenderit occaecat cillum
+                veniam officia ut. Elit in laboris ex non fugiat proident ullamco
+                reprehenderit nisi qui velit anim irure quis minim non. Dolor aliqua cillum
+                dolor deserunt pariatur cillum duis tempor sunt esse irure velit minim. Amet
+                proident laboris enim in laboris ex ad fugiat. Laborum nulla id est non magna
+                do aliqua et fugiat non adipisicing. Ipsum qui non consequat sit amet
+                excepteur labore nostrud ea cillum do nisi laboris.
+                Elit in laboris ex non fugiat proident ullamco
+                reprehenderit nisi qui velit anim irure quis minim non. Dolor aliqua cillum
+                dolor deserunt pariatur cillum duis tempor sunt ess
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-6 ej_section">
+            <div id="section-ja">
+                <i class="fa fa-check-circle-o fa-3x" aria-hidden"true" />
+                <h2>Journal Articles</h2>
+            </div>
+            <div class="ej-section-text">
+            <p>Articles are Discussion Papers that have been
+            selected for publication as journal articles as a result of the
+            referee process–mostly revised versions–and the public peer review process. In
+            the ongoing open assessment of published articles registered readers are asked
+            to take part in the evaluation process by uploading
+            comments.
+            </p>
+            <div class="latest"
+                tal:define="papers view/get_latest_ja;
+                            Batch python:modules['Products.CMFPlone'].Batch;
+                            b_start python:request.get('b_start',0);
+                            papers_per_page python:100;">
+            <!-- <metal:macro define-macro="lp">
+                <tal:block tal:repeat="paper papers">
+                    <p tal:define="paper_view paper/@@paperView;">
+                        <span class="label label-ja" tal:content="paper_view/getTitleDate" /><br />
+                        <span tal:replace="paper_view/authors_as_string"/><br />
+                        <a href="#" class="paperlist_title" tal:attributes="href paper/absolute_url" tal:content="paper/Title" />
+                    </p>
+                </tal:block>
+            </metal:macro> -->
+            <metal:macro use-macro="context/paper_macros/macros/paper_list_entry" />
+            </div>
+            <p style="text-align:center"><a href="#" tal:attributes="href string:${portal_url}/economics/journalarticles"><span class="label label-ja">All Journal Articles</span>
+        </a></p>
+
+
+        </div>
+        </div>
+
+        <div class="col-md-6 ej_section">
+            <div id="section-dp">
+                <i class="fa fa-comments-o fa-3x" aria-hidden"true" />
+                <h2> Discussion Papers</h2>
+            </div>
+            <div class="ej-section-text">
+                <p>The Economics Discussion Paper Series contains all recent contributions
+                that are open for discussion while pending acceptance for publication as
+                Journal Articles, as well as all older papers that have either
+                been accepted or rejected or that are withdrawn by the authors from
+                publication. Readers are asked to take part
+                in the discussion of a paper by uploading comments.</p>
+                <div class="latest"
+                    tal:define="papers view/get_latest_dp;
+                                Batch python:modules['Products.CMFPlone'].Batch;
+                                b_start python:request.get('b_start',0);
+                                papers_per_page python:100;
+                                ">
+                <metal:macro use-macro="context/paper_macros/macros/paper_list_entry" />
+                </div>
+                <p style="text-align:center"><a tal:attributes="href string:${portal_url}/economics/discussionpapers" href="#"><span class="label label-dp">All Discussion Papers</span>
+                </a></p>
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</div>
+</body>
+
+</html>
