@@ -52,7 +52,7 @@
 
         <!-- About / Info Links -->
         <replace css:theme-children="#about_economics">
-            <li class="dropdown-header" style="margin-top: -5px;">About</li>
+            <!--<li class="dropdown-header" style="margin-top: -5px;">About</li>-->
             <!-- <li><a href="{$portal_url}/conception/economics-at-a-glance">Economics at a Glance</a></li> -->
             <li><a href="{$portal_url}/conception/aims-and-scope">Aims and Scope</a></li>
             <li><a href="{$portal_url}/conception/review-process">Review Process</a></li>
@@ -80,6 +80,7 @@
         <replace css:theme-children="#login_menu" css:content-children="#login_menu" href="@@ej_components" />
         <copy content='//*[@id="user_menu_title"]' theme='//*[@id="login_title"]' href="@@ej_components" />
 
+
         <before css:theme="#user_menu" if="$manager">
             <li class="dropdown" id="manager_menu" >
                 <a href="#"
@@ -94,9 +95,11 @@
                     <li><a href="{$portal_url}/download-registered-readers">Download Readers</a></li>
                     <li><a href="{$portal_url}/member_search">Member Search</a></li>
                     <li><a href="{$portal_url}/stats">Statistics</a></li>
+                    <li><a href="{$portal_url}/full_review_list">Review List</a></li>
                 </ul>
             </li>
         </before>
+
 
 <!--
         <replace css:theme-children="#search" css:content="#searchbox" />

@@ -27,7 +27,7 @@
 @navFonts: @lato;
 @textFonts: @lato;
 
-@baseFontSize: 1.4em;
+@baseFontSize: 1.25em;
 
 .grey {
     color: @secondaryTextColor;
@@ -36,7 +36,10 @@
 body, p, td {
     font-family: @textFonts;
     color: @primaryTextColor;
-    font-size:1.4em;
+    @media  (max-width: 768px) {
+        font-size:1.4em;
+    };
+    font-size:1.4em; /* umstritten! */
 }
 
 
@@ -125,18 +128,21 @@ body, p, td {
 }
 
 #edit-bar {
-    border: 0.25em solid @ploneEditBarColor;
-    font-size:100%;
+    /*border: 0.25em solid @ploneEditBarColor;*/
+    border: none;
+    font-size:1em;
     font-family: @navFonts;
     font-weight: 400;
     margin-top: 0px;
 }
 
-#content-views {
-}
 
 #contentActionMenus {
     background: @ploneEditBarColor;
+    border-radius: 0px;
+    position: relative;
+    top: 0em;
+    right: 0em;
     dl.actionMenu.activated dd {
         border-bottom: 0.5em solid @ploneEditBarColor;
     };
@@ -162,6 +168,12 @@ body, p, td {
 	background: @accentColor;
 	color: @textPrimaryColor;
     border-radius: 0px;
+}
+
+li.formTab a.selected {
+    background-color: @primaryColor !important;
+    border:none;
+    text-decoration: none;
 }
 
 #content ul.formTabs {
@@ -206,6 +218,7 @@ h2  {
 
 .accepted, .accepted a:visited {
     color:@green !important;
+    font-family: @textFonts;
 }
 
 .btn-info {
@@ -364,4 +377,20 @@ input[type='submit'] {
 .latest {
     margin-top:24px;
 
+}
+
+#content ul.formTabs {
+    border: none;
+}
+
+label.formQuestion {
+    font-size: 1.25em;
+}
+
+.formHelp {
+    font-size: 1em !important;
+}
+
+.inline {
+    display: inline;
 }

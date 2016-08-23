@@ -61,13 +61,13 @@
                 <h2>Journal Articles</h2>
             </div>
             <div class="ej-section-text">
-            <p>Articles are Discussion Papers that have been
+            <!--<p>Articles are Discussion Papers that have been
             selected for publication as journal articles as a result of the
             referee process–mostly revised versions–and the public peer review process. In
             the ongoing open assessment of published articles registered readers are asked
             to take part in the evaluation process by uploading
             comments.
-            </p>
+        </p>-->
             <div class="latest"
                 tal:define="papers view/get_latest_ja;
                             Batch python:modules['Products.CMFPlone'].Batch;
@@ -97,12 +97,12 @@
                 <h2> Discussion Papers</h2>
             </div>
             <div class="ej-section-text">
-                <p>The Economics Discussion Paper Series contains all recent contributions
+                <!--<p>The Economics Discussion Paper Series contains all recent contributions
                 that are open for discussion while pending acceptance for publication as
                 Journal Articles, as well as all older papers that have either
                 been accepted or rejected or that are withdrawn by the authors from
                 publication. Readers are asked to take part
-                in the discussion of a paper by uploading comments.</p>
+                in the discussion of a paper by uploading comments.</p>-->
                 <div class="latest"
                     tal:define="papers view/get_latest_dp;
                                 Batch python:modules['Products.CMFPlone'].Batch;
