@@ -10,14 +10,19 @@
 
 <div metal:fill-slot="main">
 
-<div class="jumbotron jumbotron-home">
+<p id="togglejumbo">
+    <a id="showjumbo" href="#">Show Jumbo</a>
+    <a id="hidejumbo" href="#">Hide Jumbo</a>
+</p>
+
+<div class="jumbotron jumbotron-home" id="ejumbo">
     <div class="container">
         <h1>ECONOMICS E-JOURNAL (LOGO)</h1>
-        <p>Economics is a pathbreaking journal that adopts an open source
-        approach to publication, viewing research as a cooperative enterprise between authors,
-        editors, referees, and readers. [Aims and Scope] You are strongly encouraged to join the
-        journal's community and become a registered reader. As such, you can comment on articles.
-        And, of course, you can always submit a paper.</p>
+        <p>Hier könnte ein kurzer Text stehen. Nur das Logo + vielleicht eine Unterzeile ginge aber auch.
+            Man bedenke auch, dass ein echtes Logo hier besser wirkt! Deshalb sollten wir mit der Entscheidung
+            warten, bis das Logo fertig ist.
+        </p>
+        
     </div>
 </div>
 
@@ -29,8 +34,8 @@
         <div class="col-md-12" id="featured">
             <!-- <i class="fa fa-star-o fa-3x" aria-hidden="true"></i>
             <h2>Featured</h2> -->
-            <h3>Feature Block -- Perhaps and Maybe Long Long Article Title with many meaningless words, questions and
-            teasing vocabulary</h3>
+            <h2>Feature Block -- Perhaps and Maybe Long Long Article Title with many meaningless words, questions and
+            teasing vocabulary</h2>
 
             <div class="ej_feature">
                 <img src="++theme++zbw.ejDiazo/static/img/example.png" class="img-responsive"/>
@@ -46,13 +51,13 @@
                 excepteur labore nostrud ea cillum do nisi laboris.
                 Elit in laboris ex non fugiat proident ullamco
                 reprehenderit nisi qui velit anim irure quis minim non. Dolor aliqua cillum
-                dolor deserunt pariatur cillum duis tempor sunt ess
+                dolor deserunt.
                 </p>
+
             </div>
 
         </div>
     </div>
-
 
     <div class="row">
         <div class="col-md-6 ej_section">

@@ -475,3 +475,32 @@ label.formQuestion {
 .inline {
   display: inline;
 }
+/* test */
+#logo_subtitle {
+  clear: both;
+  color: #00BCD4;
+  position: relative;
+  top: -10px;
+  left: 0px;
+  margin-right: 1em;
+  font-size: 0.75em;
+}
+ul.nav {
+  margin-top: 12px;
+}
+.navbar-brand {
+  padding-left: 0px;
+}
+#logo {
+  font-size: 2em;
+  letter-spacing: 0.26em;
+}
+#togglejumbo {
+  text-align: right;
+  font-size: 0.75em;
+  color: #727272;
+  margin-top: -10px;
+}
+#featured {
+  margin-top: 2em;
+}
