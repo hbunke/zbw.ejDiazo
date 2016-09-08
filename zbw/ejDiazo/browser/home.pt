@@ -22,7 +22,7 @@
             Man bedenke auch, dass ein echtes Logo hier besser wirkt! Deshalb sollten wir mit der Entscheidung
             warten, bis das Logo fertig ist.
         </p>
-        
+
     </div>
 </div>
 
@@ -31,15 +31,25 @@
 <div class="container" id="sections">
 
     <div class="row">
-        <div class="col-md-12" id="featured">
+        <div class="col-md-12" id="featured" tal:define="teaser view/get_teaser;"
+            tal:condition="teaser">
             <!-- <i class="fa fa-star-o fa-3x" aria-hidden="true"></i>
             <h2>Featured</h2> -->
-            <h2>Feature Block -- Perhaps and Maybe Long Long Article Title with many meaningless words, questions and
-            teasing vocabulary</h2>
+            <!--<h2>Feature Block -- Perhaps and Maybe Long Long Article Title with many meaningless words, questions and
+            teasing vocabulary</h2>-->
+            <h2 tal:content="teaser/title" />
 
-            <div class="ej_feature">
-                <img src="++theme++zbw.ejDiazo/static/img/example.png" class="img-responsive"/>
-                <p>Passender Teaser Text zum Artikel und Bild. Im Feature können auch hervorhebenswerte
+            <div class="ej_feature"
+                    tal:define="picture nocall:teaser/picture">
+                <!--<img src="++theme++zbw.ejDiazo/static/img/example.png" class="img-responsive"/> -->
+                <!--<img tal:attributes="src string:${teaser/absolute_url}/@@download/picture/${picture/filename}/" />-->
+                <!--<img tal:replace="structure teaser/@@images/picture/mini" /> -->
+                <img tal:attributes="src string:${teaser/absolute_url}/@@download/picture/${picture/filename}"
+                    style="max-height:300px; max-width:750px; margin: 1em 2em 1em 0em;"
+                         />
+                <p style="margin-top: 1em" tal:content="structure teaser/teasertext" />
+
+                <!-- Passender Teaser Text zum Artikel und Bild. Im Feature können auch hervorhebenswerte
                     Announcements oder besondere Hinweise stehen. Es sollte immer eine Grafik dabei sein.
                 Nulla anim velit laborum
                 consequat sint magna nulla excepteur amet tempor reprehenderit occaecat cillum
@@ -51,8 +61,8 @@
                 excepteur labore nostrud ea cillum do nisi laboris.
                 Elit in laboris ex non fugiat proident ullamco
                 reprehenderit nisi qui velit anim irure quis minim non. Dolor aliqua cillum
-                dolor deserunt.
-                </p>
+                dolor deserunt. -->
+
 
             </div>
 

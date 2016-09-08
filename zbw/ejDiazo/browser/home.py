@@ -36,3 +36,12 @@ class View(BrowserView):
         brains = catalog(portal_type='DiscussionPaper', review_state=("discussible", "rejected"),
                 sort_on="created", sort_order="descending", sort_limit=1)[:1]
         return [brain.getObject() for brain in brains]
+
+
+    def get_teaser(self):
+        catalog=getToolByName(self.context, "portal_catalog")
+        brains = catalog(portal_type="zbw.ejTeaser.teaser", sort_on="created",
+        sort_order="descending", review_state="published", sort_limit=1)[:1]
+        if brains:
+            return [brain.getObject() for brain in brains][0]
+        return None
