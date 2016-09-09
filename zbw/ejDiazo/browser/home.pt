@@ -37,33 +37,18 @@
             <h2>Featured</h2> -->
             <!--<h2>Feature Block -- Perhaps and Maybe Long Long Article Title with many meaningless words, questions and
             teasing vocabulary</h2>-->
-            <h2 tal:content="teaser/title" />
+            <h2 >
+                <a href="#" tal:attributes="href teaser/url" tal:content="teaser/title" />
+            </h2>
 
             <div class="ej_feature"
                     tal:define="picture nocall:teaser/picture">
                 <!--<img src="++theme++zbw.ejDiazo/static/img/example.png" class="img-responsive"/> -->
                 <!--<img tal:attributes="src string:${teaser/absolute_url}/@@download/picture/${picture/filename}/" />-->
                 <!--<img tal:replace="structure teaser/@@images/picture/mini" /> -->
-                <img tal:attributes="src string:${teaser/absolute_url}/@@download/picture/${picture/filename}"
-                    style="max-height:300px; max-width:750px; margin: 1em 2em 1em 0em;"
-                         />
-                <p style="margin-top: 1em" tal:content="structure teaser/teasertext" />
-
-                <!-- Passender Teaser Text zum Artikel und Bild. Im Feature können auch hervorhebenswerte
-                    Announcements oder besondere Hinweise stehen. Es sollte immer eine Grafik dabei sein.
-                Nulla anim velit laborum
-                consequat sint magna nulla excepteur amet tempor reprehenderit occaecat cillum
-                veniam officia ut. Elit in laboris ex non fugiat proident ullamco
-                reprehenderit nisi qui velit anim irure quis minim non. Dolor aliqua cillum
-                dolor deserunt pariatur cillum duis tempor sunt esse irure velit minim. Amet
-                proident laboris enim in laboris ex ad fugiat. Laborum nulla id est non magna
-                do aliqua et fugiat non adipisicing. Ipsum qui non consequat sit amet
-                excepteur labore nostrud ea cillum do nisi laboris.
-                Elit in laboris ex non fugiat proident ullamco
-                reprehenderit nisi qui velit anim irure quis minim non. Dolor aliqua cillum
-                dolor deserunt. -->
-
-
+                <img tal:attributes="src string:${teaser/absolute_url}/@@download/picture/${picture/filename}" />
+                <div style="margin-top: 1em" tal:content="structure teaser/teasertext"></div>
+                <div id="teaserlink"><a href="#" tal:attributes="href teaser/url"><span class="label label-teaser">Read More...</span></a></div>
             </div>
 
         </div>
