@@ -17,14 +17,17 @@
 
 <div class="jumbotron jumbotron-home" id="ejumbo">
     <div class="container">
-        <h1>ECONOMICS E-JOURNAL (LOGO)</h1>
-        <p>Hier könnte ein kurzer Text stehen. Nur das Logo + vielleicht eine Unterzeile ginge aber auch.
+        <!-- <h1>ECONOMICS E-JOURNAL (LOGO)</h1> -->
+
+        <img src="++theme++zbw.ejDiazo/static/img/logo_ut.png" class="img-responsive" />
+        <!-- <p style="margin-top:2em;">Hier könnte ein kurzer Text stehen. Nur das Logo + vielleicht eine Unterzeile ginge aber auch.
             Man bedenke auch, dass ein echtes Logo hier besser wirkt! Deshalb sollten wir mit der Entscheidung
             warten, bis das Logo fertig ist.
-        </p>
-        
+        </p> -->
+
     </div>
 </div>
+
 
 
 
@@ -32,28 +35,34 @@
 
     <div class="row">
         <div class="col-md-12" id="featured">
-            <!-- <i class="fa fa-star-o fa-3x" aria-hidden="true"></i>
-            <h2>Featured</h2> -->
-            <h2>Feature Block -- Perhaps and Maybe Long Long Article Title with many meaningless words, questions and
-            teasing vocabulary</h2>
+            <!-- <i class="fa fa-star-o fa-3x" aria-hidden="true"></i> -->
+            <!-- <h2>Featured</h2> -->
+            <div id="section-feature">
+                <!-- <i class="fa fa-star fa-3x" aria-hidden"true" /> -->
+                <!-- <h2>Featured</h2> -->
+                <h2>Feature Block -- Perhaps Long Article Title in laboris ex non fugiat proident ullamco
+                reprehenderit nisi qui velit anim non fugiat proident ullamco</h2>
+            </div>
+            <div class="ej-section-text">
 
-            <div class="ej_feature">
-                <img src="++theme++zbw.ejDiazo/static/img/example.png" class="img-responsive"/>
-                <p>Passender Teaser Text zum Artikel und Bild. Im Feature können auch hervorhebenswerte
-                    Announcements oder besondere Hinweise stehen. Es sollte immer eine Grafik dabei sein.
-                Nulla anim velit laborum
-                consequat sint magna nulla excepteur amet tempor reprehenderit occaecat cillum
-                veniam officia ut. Elit in laboris ex non fugiat proident ullamco
-                reprehenderit nisi qui velit anim irure quis minim non. Dolor aliqua cillum
-                dolor deserunt pariatur cillum duis tempor sunt esse irure velit minim. Amet
-                proident laboris enim in laboris ex ad fugiat. Laborum nulla id est non magna
-                do aliqua et fugiat non adipisicing. Ipsum qui non consequat sit amet
-                excepteur labore nostrud ea cillum do nisi laboris.
-                Elit in laboris ex non fugiat proident ullamco
-                reprehenderit nisi qui velit anim irure quis minim non. Dolor aliqua cillum
-                dolor deserunt.
-                </p>
 
+
+                <div class="ej_feature">
+                    <img src="++theme++zbw.ejDiazo/static/img/example.png" class="img-responsive"/>
+                    <p>Passender Teaser Text zum Artikel und Bild. Im Feature können auch hervorhebenswerte
+                        Announcements oder besondere Hinweise stehen. Es sollte immer eine Grafik dabei sein.
+                    Nulla anim velit laborum
+                    consequat sint magna nulla excepteur amet tempor reprehenderit occaecat cillum
+                    veniam officia ut. Elit in laboris ex non fugiat proident ullamco
+                    reprehenderit nisi qui velit anim irure quis minim non. Dolor aliqua cillum
+                    dolor deserunt pariatur cillum duis tempor sunt esse irure velit minim. Amet
+                    proident laboris enim in laboris ex ad fugiat. Laborum nulla id est non magna
+                    do aliqua et fugiat non adipisicing. Ipsum qui non consequat sit amet
+                    excepteur labore nostrud ea cillum do nisi laboris.
+                    Elit in laboris ex non fugiat proident ullamco
+                    reprehenderit nisi qui velit anim irure quis minim non. Dolor aliqua cillum.
+                    </p>
+                </div>
             </div>
 
         </div>
@@ -125,6 +134,9 @@
 
         </div>
     </div>
+
+
+
 </div>
 
 

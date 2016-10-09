@@ -14,6 +14,10 @@
 @red: #d32f2f;
 @green: #00796b;
 
+@darklink: #006064;
+@link: #00838f;
+@hover: #0097a7;
+
 
 @yellow: #ffa000;
 // @yellow: #fbc02d;
@@ -29,6 +33,7 @@
 
 @baseFontSize: 1.25em;
 
+
 .grey {
     color: @secondaryTextColor;
 }
@@ -42,7 +47,16 @@ body, p, td {
     font-size:1.4em; /* umstritten! */
 }
 
+a {
+    // color: #00838f;
+    color:@darklink;
+    font-weight: 500;
 
+}
+a:hover {
+    color:@hover;
+    text-decoration: none;
+}
 
 .navbar-brand {
     font-size:220%;
@@ -74,7 +88,13 @@ body, p, td {
     background: @darkPrimaryColor;
     border-radius:0px;
     color: @textPrimaryColor;
+    min-height:1rem
 }
+
+ul.nav {
+    margin-top:1em;
+}
+
 
 .navbar .nav > li > a {
     color: @textPrimaryColor;
@@ -307,7 +327,8 @@ input[type='submit'] {
 }
 
 .jumbotron {
-    background-color: @lightPrimaryColor;
+    //background-color: @lightPrimaryColor;
+    background-color: white;
     color: @primaryColor;
     text-align: center;
 }
@@ -334,12 +355,13 @@ input[type='submit'] {
     i {
         color: @primaryColor;
     };
-    margin-bottom: 5em;
+    margin-bottom: 1em;
+    margin-top: 2em;
 }
 
 #sections {
     h2 {
-    //     color: @primaryColor;
+        color: @darkPrimaryColor;
         display: inline;
     //     padding-left: 12px;
     };
@@ -349,17 +371,30 @@ input[type='submit'] {
     font-weight: 300;
 }
 
-// #section-ja {
-//     h2, i {
-//         color: @green;
-//     };
-//
-// }
+
+#section-feature {
+    //background-color: @accentColor;
+    background-color: @primaryColor;
+    color: @textPrimaryColor;
+    padding: 0.5em 1em 0.5em 1em;
+    text-align: center;
+    h2 {
+        color:@textPrimaryColor;
+        line-height: 1.25em;
+        //margin-left:10px;
+    };
+
+};
+
+
 
 #section-ja {
     background-color: @green;
     color: @textPrimaryColor;
     padding: 10px;
+    h2 {
+        color:@textPrimaryColor;
+    }
 };
 
 
@@ -367,11 +402,17 @@ input[type='submit'] {
     background-color: @yellow;
     color: @textPrimaryColor;
     padding: 10px;
+    h2 {
+        color: @textPrimaryColor;
+    }
 }
 
 .ej-section-text {
-    padding: 12px;
+    padding: 2em;
     border: 1px solid @dividerColor;
+    h2 {
+        //font-size:4em;
+    }
 }
 
 .latest {
@@ -407,9 +448,6 @@ label.formQuestion {
 
 }
 
-ul.nav {
-    margin-top: 12px;
-}
 
 .navbar-brand {
     padding-left: 0px;
@@ -424,10 +462,15 @@ ul.nav {
     text-align: right;
     font-size:0.75em;
     color: @secondaryTextColor;
-    
+
     margin-top:-10px;
 }
 
 #featured {
     margin-top: 2em;
+    margin-bottom: 2em;
+    div {
+        border:none;
+
+    }
 }
