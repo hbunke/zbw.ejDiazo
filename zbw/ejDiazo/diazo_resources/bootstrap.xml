@@ -37,7 +37,9 @@
         </replace>
 
         <replace css:theme="#logo">
-            <a class="navbar-brand" id="logo" href="{$portal_url}">ECONOMICS</a>
+            <a class="navbar-brand" id="logo" href="{$portal_url}" title="The Open-Access, Open-Assessment E-Journal">
+                <img src="++theme++zbw.ejDiazo/static/img/logo_inv.png"  />
+            </a>
         </replace>
 
         <!-- Special Areas Links -->
