@@ -88,13 +88,35 @@ a:hover {
     background: @darkPrimaryColor;
     border-radius:0px;
     color: @textPrimaryColor;
-    min-height:1rem
+    min-height:1rem;
+    @media (max-width: 768px) {
+        min-height:64px;
+    };
+}
+
+.navbar-default .navbar-collapse {
+    border:none;
+    box-shadow: none;
 }
 
 ul.nav {
     margin-top:1em;
 }
 
+.navbar-collapse ul.nav {
+    margin-left:0.3em;
+    margin-top: 1em;
+}
+
+.navbar-default {
+    .navbar-toggle:hover {
+    background-color: @accentColor;
+    };
+    .navbar-toggle:active {
+        background-color: @accentColor;
+    };
+
+};
 
 .navbar .nav > li > a {
     color: @textPrimaryColor;
@@ -445,7 +467,6 @@ label.formQuestion {
     left:0px;
     margin-right: 1em;
     font-size: 0.75em;
-
 }
 
 
