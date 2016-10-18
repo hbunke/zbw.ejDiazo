@@ -98,10 +98,10 @@
                     <li><a href="{$portal_url}/member_search">Member Search</a></li>
                     <li><a href="{$portal_url}/stats">Statistics</a></li>
                     <li><a href="{$portal_url}/full_review_list">Review List</a></li>
+                    <li><a href="{$portal_url}/zbw-ejteaser-folder">Teaser</a></li>
                 </ul>
             </li>
         </before>
-
 
 <!--
         <replace css:theme-children="#search" css:content="#searchbox" />

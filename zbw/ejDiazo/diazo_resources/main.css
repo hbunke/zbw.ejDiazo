@@ -566,9 +566,9 @@ label.formQuestion {
   font-size: 1.25em;
 }
 #teaserlink {
-  text-align: right;
-  margin-top: 1em;
-  margin-bottom: 2em;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 5em;
 }
 #teaserlink div {
   border: none;
