@@ -466,10 +466,6 @@ input[type='submit'] {
 }
 .ej_feature {
   margin-bottom: 1em;
-  margin-top: 2em;
-}
-.ej_feature img {
-  float: left;
 }
 .ej_feature i {
   color: #607D8B;
@@ -552,11 +548,6 @@ label.formQuestion {
 #featured {
   margin-top: 2em;
 }
-#featured img {
-  max-height: 300px;
-  max-width: 750px;
-  margin: 1em 2em 1em 0em;
-}
 #featured a {
   color: #212121;
 }
@@ -572,4 +563,19 @@ label.formQuestion {
 }
 #teaserlink div {
   border: none;
+}
+#teaser_image {
+  margin: 0 0 1em 0;
+}
+#teaser_image img {
+  min-width: 100%;
+}
+#teaser_image figcaption {
+  text-align: left;
+  padding: 0.5em 0.5em 0.5em 1em;
+  background-color: #455A64;
+  opacity: 0.6;
+  margin-top: -2.4em;
+  color: white;
+  font-weight: 500;
 }

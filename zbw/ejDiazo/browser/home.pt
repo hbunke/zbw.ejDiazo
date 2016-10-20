@@ -6,9 +6,8 @@
 <body>
 
 
-
-
-<div metal:fill-slot="main">
+<div metal:fill-slot="main"
+    tal:define="manager python:'Manager' in portal_state.member().getRolesInContext(context)">
 <!--
 <p id="togglejumbo">
     <a id="showjumbo" href="#">Show Jumbo</a>
@@ -40,6 +39,11 @@
             teasing vocabulary</h2>-->
             <div id="section-feature">
                 <h2 tal:content="teaser/title" />
+                <div style="float:right; padding:10px 0px 10px 25px" tal:condition="manager">
+                    <a tal:attributes="href string:${teaser/absolute_url}" style="color:white">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
 
             <div class="ej_feature"
@@ -47,14 +51,15 @@
                 <!--<img src="++theme++zbw.ejDiazo/static/img/example.png" class="img-responsive"/> -->
                 <!--<img tal:attributes="src string:${teaser/absolute_url}/@@download/picture/${picture/filename}/" />-->
                 <!--<img tal:replace="structure teaser/@@images/picture/mini" /> -->
-                <img
-                    tal:attributes="src string:${teaser/absolute_url}/@@download/picture/${picture/filename}"
-                    class="img-responsive"/>
-
-                <div style="margin-top: 1em;" tal:content="structure teaser/teasertext" />
+                <figure id="teaser_image" >
+                    <img
+                        tal:attributes="src string:${teaser/absolute_url}/@@download/picture/${picture/filename}"
+                        class="img-responsive" />
+                    <figcaption tal:condition="teaser/caption" tal:content="teaser/caption" />
+                </figure>
+                <div id="teasertext" tal:content="structure teaser/teasertext" />
                 <div id="teaserlink"><a href="#" tal:attributes="href teaser/url"><span class="label label-teaser">Read More...</span></a></div>
             </div>
-
         </div>
     </div>
 
