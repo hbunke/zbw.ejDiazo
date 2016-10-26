@@ -41,6 +41,7 @@
 body, p, td {
     font-family: @textFonts;
     color: @primaryTextColor;
+    //background-color: @lightPrimaryColor;
     @media  (max-width: 768px) {
         font-size:1.4em;
     };
@@ -353,6 +354,7 @@ input[type='submit'] {
     background-color: white;
     color: @primaryColor;
     text-align: center;
+    margin-bottom:0;
 }
 
 .ej_section {
@@ -396,11 +398,13 @@ input[type='submit'] {
 
 
 #section-feature {
-    //background-color: @accentColor;
-    background-color: @primaryColor;
+    background-color: @accentColor;
+    //background-color: @primaryColor;
     color: @textPrimaryColor;
     padding: 0.5em 1em 0.5em 1em;
     text-align: center;
+    //opacity:0.9;
+
     h2 {
         color:@textPrimaryColor;
         line-height: 1.25em;
@@ -489,12 +493,14 @@ label.formQuestion {
 }
 
 #featured {
-    margin-top: 2em;
+    //margin-top: 1em;
     // img {
     //     /*max-height:300px;*/
     //     // max-width:700px;
     //     margin: 1em 2em 1em 0em
     // };
+    padding:0;
+
     a {
         color: @primaryTextColor
     };
@@ -508,7 +514,7 @@ label.formQuestion {
 
 #teaserlink {
     text-align: center;
-    margin-top:2em;
+    margin-top:2rem;
     margin-bottom: 5em;
     div {
         border:none;
@@ -516,21 +522,21 @@ label.formQuestion {
 }
 
 #teaser_image {
-    //float: left;
     margin: 0 0 1em 0;
-
-    //border-right: 1px solid @primaryColor;
-    //border-left: 1px solid @primaryColor;
+    background-color: @accentColor;
+    // border-right: 1px solid @primaryColor;
+    // border-left: 1px solid @primaryColor;
     img {
         min-width:100%;
+        opacity: 0.9;
     };
     figcaption {
         text-align: left;
-        padding: 0.5em 0.5em 0.5em 1em;
+        padding: 1em;
         background-color: @darkPrimaryColor;
         //background: rgba(96, 125, 139, 1.0);
-        opacity: 0.6;
-        margin-top: -2.4em;
+        opacity: 0.5;
+        margin-top: -3.5em;
         color:white;
         font-weight: 500;
 

@@ -30,13 +30,14 @@
 <div class="container" id="sections">
 
     <div class="row">
-
-        <div class="col-md-12" id="featured" tal:define="teaser view/get_teaser;"
+        <div class="col-md-12" id="featured" tal:define="teaser view/get_teaser; picture nocall:teaser/picture"
             tal:condition="teaser">
             <!-- <i class="fa fa-star-o fa-3x" aria-hidden="true"></i>
             <h2>Featured</h2> -->
             <!--<h2>Feature Block -- Perhaps and Maybe Long Long Article Title with many meaningless words, questions and
             teasing vocabulary</h2>-->
+
+
             <div id="section-feature">
                 <h2 tal:content="teaser/title" />
                 <div style="float:right; padding:10px 0px 10px 25px" tal:condition="manager">
@@ -51,17 +52,22 @@
                 <!--<img src="++theme++zbw.ejDiazo/static/img/example.png" class="img-responsive"/> -->
                 <!--<img tal:attributes="src string:${teaser/absolute_url}/@@download/picture/${picture/filename}/" />-->
                 <!--<img tal:replace="structure teaser/@@images/picture/mini" /> -->
+
                 <figure id="teaser_image" >
                     <img
                         tal:attributes="src string:${teaser/absolute_url}/@@download/picture/${picture/filename}"
                         class="img-responsive" />
                     <figcaption tal:condition="teaser/caption" tal:content="teaser/caption" />
                 </figure>
-                <div id="teasertext" tal:content="structure teaser/teasertext" />
+
+                <div id="teasertext" tal:content="structure teaser/teasertext"></div>
                 <div id="teaserlink"><a href="#" tal:attributes="href teaser/url"><span class="label label-teaser">Read More...</span></a></div>
             </div>
+
         </div>
+
     </div>
+
 
     <div class="row">
         <div class="col-md-6 ej_section">
@@ -122,11 +128,7 @@
                 </div>
                 <p style="text-align:center"><a tal:attributes="href string:${portal_url}/economics/discussionpapers" href="#"><span class="label label-dp">All Discussion Papers</span>
                 </a></p>
-
-
-
             </div>
-
         </div>
     </div>
 

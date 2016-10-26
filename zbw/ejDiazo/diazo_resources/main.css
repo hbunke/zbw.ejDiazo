@@ -457,6 +457,7 @@ input[type='submit'] {
   background-color: white;
   color: #607D8B;
   text-align: center;
+  margin-bottom: 0;
 }
 .ej_section {
   margin-bottom: 5em;
@@ -478,7 +479,7 @@ input[type='submit'] {
   display: inline;
 }
 #section-feature {
-  background-color: #607D8B;
+  background-color: #00BCD4;
   color: #FFFFFF;
   padding: 0.5em 1em 0.5em 1em;
   text-align: center;
@@ -546,7 +547,7 @@ label.formQuestion {
   margin-top: -10px;
 }
 #featured {
-  margin-top: 2em;
+  padding: 0;
 }
 #featured a {
   color: #212121;
@@ -558,7 +559,7 @@ label.formQuestion {
 }
 #teaserlink {
   text-align: center;
-  margin-top: 2em;
+  margin-top: 2rem;
   margin-bottom: 5em;
 }
 #teaserlink div {
@@ -566,16 +567,18 @@ label.formQuestion {
 }
 #teaser_image {
   margin: 0 0 1em 0;
+  background-color: #00BCD4;
 }
 #teaser_image img {
   min-width: 100%;
+  opacity: 0.9;
 }
 #teaser_image figcaption {
   text-align: left;
-  padding: 0.5em 0.5em 0.5em 1em;
+  padding: 1em;
   background-color: #455A64;
-  opacity: 0.6;
-  margin-top: -2.4em;
+  opacity: 0.5;
+  margin-top: -3.5em;
   color: white;
   font-weight: 500;
 }
