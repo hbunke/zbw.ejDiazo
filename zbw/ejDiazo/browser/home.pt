@@ -7,7 +7,8 @@
 
 
 <div metal:fill-slot="main"
-    tal:define="manager python:'Manager' in portal_state.member().getRolesInContext(context)">
+    tal:define="manager python:'Manager' in portal_state.member().getRolesInContext(context);
+                teaser view/get_teaser;">
 <!--
 <p id="togglejumbo">
     <a id="showjumbo" href="#">Show Jumbo</a>
@@ -29,9 +30,8 @@
 
 <div class="container" id="sections">
 
-    <div class="row">
-        <div class="col-md-12" id="featured" tal:define="teaser view/get_teaser; picture nocall:teaser/picture"
-            tal:condition="teaser">
+    <div class="row" tal:condition="teaser">
+        <div class="col-md-12" id="featured"  tal:define="picture nocall:teaser/picture">
             <!-- <i class="fa fa-star-o fa-3x" aria-hidden="true"></i>
             <h2>Featured</h2> -->
             <!--<h2>Feature Block -- Perhaps and Maybe Long Long Article Title with many meaningless words, questions and
@@ -47,8 +47,7 @@
                 </div>
             </div>
 
-            <div class="ej_feature"
-                    tal:define="picture nocall:teaser/picture">
+            <div class="ej_feature">
                 <!--<img src="++theme++zbw.ejDiazo/static/img/example.png" class="img-responsive"/> -->
                 <!--<img tal:attributes="src string:${teaser/absolute_url}/@@download/picture/${picture/filename}/" />-->
                 <!--<img tal:replace="structure teaser/@@images/picture/mini" /> -->
