@@ -222,6 +222,11 @@ a:hover {
 #footer a {
   color: #FFFFFF;
 }
+@media (max-width: 564px) {
+  #footer img {
+    margin-bottom: 1.5em;
+  }
+}
 .footer-links {
   margin-top: 1em;
   padding: 10px;
@@ -545,6 +550,20 @@ label.formQuestion {
   font-size: 0.75em;
   color: #727272;
   margin-top: -10px;
+}
+#ejumbo {
+  background-color: #607D8B;
+  margin: -20px 0 1em 0;
+  padding: 20px 10px 20px 10px;
+}
+#ejumbo img {
+  display: block;
+  margin: auto;
+}
+@media (min-width: 564px) {
+  #ejumbo img {
+    width: 70%;
+  }
 }
 #featured {
   padding: 0;

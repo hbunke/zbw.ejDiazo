@@ -38,6 +38,8 @@
     color: @secondaryTextColor;
 }
 
+
+
 body, p, td {
     font-family: @textFonts;
     color: @primaryTextColor;
@@ -47,6 +49,8 @@ body, p, td {
     };
     font-size:1.4em; /* umstritten! */
 }
+
+
 
 a {
     // color: #00838f;
@@ -75,6 +79,11 @@ a:hover {
     // padding: 3px;
     a {
         color: @textPrimaryColor
+    };
+    img {
+        @media  (max-width: 564px) {
+            margin-bottom:1.5em;
+        };
     };
 }
 
@@ -222,6 +231,8 @@ li.formTab a.selected {
 #content ul.formTabs {
     background-color: @accentColor;
 }
+
+
 
 .navbar-form  {
     width: auto;
@@ -491,6 +502,20 @@ label.formQuestion {
 
     margin-top:-10px;
 }
+
+#ejumbo {
+    background-color: @primaryColor;
+    margin:-20px 0 1em 0;
+    padding:20px 10px 20px 10px;
+    img {
+        display: block;
+        margin: auto;
+        @media (min-width:564px) {
+            width:70%;
+        };
+    };
+}
+
 
 #featured {
     //margin-top: 1em;

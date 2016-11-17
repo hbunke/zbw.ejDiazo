@@ -42,6 +42,17 @@
             </a>
         </replace>
 
+        <!-- only show jumbo title on frontpage; #featured is an element there -->
+        <replace css:theme="#frontjumbo" css:if-content="#featured">
+            <div id="ejumbo">
+                <div class="container" style="text-align:center">
+                    <img src="++theme++zbw.ejDiazo/static/img/logo.title.inv.slogan.png" class="img-responsive"
+                        />
+                </div>
+            </div>
+        </replace>
+
+
         <!-- Special Areas Links -->
         <replace css:theme-children="#special_areas_menu">
             <li><a href="{$portal_url}/special-areas/surveys-and-overviews">Surveys and Overviews</a></li>

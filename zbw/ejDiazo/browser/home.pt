@@ -14,18 +14,10 @@
     <a id="showjumbo" href="#">Show Jumbo</a>
     <a id="hidejumbo" href="#">Hide Jumbo</a>
 </p> -->
+<!-- <div id="ejumbo">
+        <img src="++theme++zbw.ejDiazo/static/img/logo.title.inv.slogan.png" class="img-responsive" />
+</div> -->
 
-<div class="jumbotron jumbotron-home" id="ejumbo">
-    <div class="container">
-        <!-- <h1>ECONOMICS E-JOURNAL (LOGO)</h1> -->
-
-        <img src="++theme++zbw.ejDiazo/static/img/logo_ut.png" class="img-responsive" />
-        <!-- <p style="margin-top:2em;">Hier könnte ein kurzer Text stehen. Nur das Logo + vielleicht eine Unterzeile ginge aber auch.
-            Man bedenke auch, dass ein echtes Logo hier besser wirkt! Deshalb sollten wir mit der Entscheidung
-            warten, bis das Logo fertig ist.
-        </p> -->
-    </div>
-</div>
 
 
 <div class="container" id="sections">
@@ -66,7 +58,6 @@
         </div>
 
     </div>
-
 
     <div class="row">
         <div class="col-md-6 ej_section">
@@ -130,8 +121,6 @@
             </div>
         </div>
     </div>
-
-
 
 </div>
 
