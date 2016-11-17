@@ -147,10 +147,10 @@
 
 
         <replace css:theme-children="#footnav">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">LEGAL</a></li>
-            <li><a href="#">CONTACT &amp; SUGGESTIONS</a></li>
-            <li><a href="#">ALERTING SERVICE</a></li>
+            <li><a href="{$portal_url}">HOME</a></li>
+            <li><a href="{$portal_url}/imprint">LEGAL</a></li>
+            <li><a href="{$portal_url}/contact-info">CONTACT &amp; SUGGESTIONS</a></li>
+            <li><a href="{$portal_url}/alerting_service_form">ALERTING SERVICE</a></li>
         </replace>
 
 
