@@ -582,3 +582,6 @@ label.formQuestion {
   color: white;
   font-weight: 500;
 }
+.double {
+  font-size: 2em;
+}
