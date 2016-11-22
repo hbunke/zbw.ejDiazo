@@ -52,7 +52,11 @@
                 </figure>
 
                 <div id="teasertext" tal:content="structure teaser/teasertext"></div>
-                <div id="teaserlink"><a href="#" tal:attributes="href teaser/url"><span class="label label-teaser">Read More...</span></a></div>
+
+                <tal:block tal:condition="teaser/url">
+                    <div id="teaserlink"><a href="#" tal:attributes="href teaser/url"><span class="label label-teaser">Read More...</span></a></div>
+                </tal:block>
+
             </div>
 
         </div>
