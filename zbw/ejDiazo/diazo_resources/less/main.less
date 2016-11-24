@@ -38,8 +38,6 @@
     color: @secondaryTextColor;
 }
 
-
-
 body, p, td {
     font-family: @textFonts;
     color: @primaryTextColor;
@@ -49,8 +47,6 @@ body, p, td {
     };
     font-size:1.4em; /* umstritten! */
 }
-
-
 
 a {
     // color: #00838f;
@@ -76,6 +72,8 @@ a:hover {
     // font-size: 5rem;
     text-align: center;
     font-family: @navFonts;
+    margin-bottom:-20px;
+    padding-bottom:10px;
     // padding: 3px;
     a {
         color: @textPrimaryColor
@@ -397,7 +395,7 @@ input[type='submit'] {
 
 #sections {
     h2 {
-        color: @darkPrimaryColor;
+        //color: @darkPrimaryColor;
         display: inline;
     //     padding-left: 12px;
     };
@@ -417,8 +415,9 @@ input[type='submit'] {
     //opacity:0.9;
 
     h2 {
-        color:@textPrimaryColor;
+    //    color:@darkPrimaryColor;
         line-height: 1.25em;
+        font-size:3rem;
         //margin-left:10px;
     };
 
@@ -443,6 +442,15 @@ input[type='submit'] {
     h2 {
         color: @textPrimaryColor;
     }
+}
+
+#section-news {
+    background-color: @primaryColor;
+    color: @textPrimaryColor;
+    padding: 10px;
+    h2 {
+        color: @textPrimaryColor;
+    };
 }
 
 .ej-section-text {

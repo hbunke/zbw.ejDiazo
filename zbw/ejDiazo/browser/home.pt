@@ -70,34 +70,16 @@
                 <h2>Journal Articles</h2>
             </div>
             <div class="ej-section-text">
-            <!--<p>Articles are Discussion Papers that have been
-            selected for publication as journal articles as a result of the
-            referee process–mostly revised versions–and the public peer review process. In
-            the ongoing open assessment of published articles registered readers are asked
-            to take part in the evaluation process by uploading
-            comments.
-        </p>-->
-            <div class="latest"
-                tal:define="papers view/get_latest_ja;
-                            Batch python:modules['Products.CMFPlone'].Batch;
-                            b_start python:request.get('b_start',0);
-                            papers_per_page python:100;">
-            <!-- <metal:macro define-macro="lp">
-                <tal:block tal:repeat="paper papers">
-                    <p tal:define="paper_view paper/@@paperView;">
-                        <span class="label label-ja" tal:content="paper_view/getTitleDate" /><br />
-                        <span tal:replace="paper_view/authors_as_string"/><br />
-                        <a href="#" class="paperlist_title" tal:attributes="href paper/absolute_url" tal:content="paper/Title" />
-                    </p>
-                </tal:block>
-            </metal:macro> -->
-            <metal:macro use-macro="context/paper_macros/macros/paper_list_entry" />
+                <div class="latest"
+                    tal:define="papers view/get_latest_ja;
+                                Batch python:modules['Products.CMFPlone'].Batch;
+                                b_start python:request.get('b_start',0);
+                                papers_per_page python:100;">
+                    <metal:macro use-macro="context/paper_macros/macros/paper_list_entry" />
+                </div>
+                    <p style="text-align:center"><a href="#" tal:attributes="href string:${portal_url}/economics/journalarticles"><span class="label label-ja">All Journal Articles</span>
+                        </a></p>
             </div>
-            <p style="text-align:center"><a href="#" tal:attributes="href string:${portal_url}/economics/journalarticles"><span class="label label-ja">All Journal Articles</span>
-        </a></p>
-
-
-        </div>
         </div>
 
         <div class="col-md-6 ej_section">
@@ -125,6 +107,29 @@
             </div>
         </div>
     </div>
+
+
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3 ej_section">
+            <div id="section-news">
+                <i class="fa fa-bullhorn fa-3x" aria-hidden="true"></i>
+                <h2>Announcements</h2>
+            </div>
+            <div class="ej-section-text">
+                <tal:newsitems tal:repeat="nitem view/get_news">
+                    <p>
+                         <a tal:attributes="href string:${nitem/getURL}" tal:content="nitem/pretty_title_or_id" />
+                     </p>
+                </tal:newsitems>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
 
 </div>
 

@@ -37,3 +37,10 @@ class View(BrowserView):
                          review_state="published", sort_limit=1)[:1]
         if brains:
             return [brain.getObject() for brain in brains][0]
+
+    def get_news(self):
+        catalog = getToolByName(self.context, "portal_catalog")
+        brains = catalog(portal_type='News Item', sort_on='Date',
+                         sort_order='reverse',
+                         review_state='published')[:3]
+        return brains

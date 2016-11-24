@@ -218,6 +218,8 @@ a:hover {
   color: #CFD8DC;
   text-align: center;
   font-family: 'Lato', sans-serif;
+  margin-bottom: -20px;
+  padding-bottom: 10px;
 }
 #footer a {
   color: #FFFFFF;
@@ -480,7 +482,6 @@ input[type='submit'] {
   font-weight: 300;
 }
 #sections h2 {
-  color: #455A64;
   display: inline;
 }
 #section-feature {
@@ -490,8 +491,8 @@ input[type='submit'] {
   text-align: center;
 }
 #section-feature h2 {
-  color: #FFFFFF;
   line-height: 1.25em;
+  font-size: 3rem;
 }
 #section-ja {
   background-color: #00796b;
@@ -507,6 +508,14 @@ input[type='submit'] {
   padding: 10px;
 }
 #section-dp h2 {
+  color: #FFFFFF;
+}
+#section-news {
+  background-color: #607D8B;
+  color: #FFFFFF;
+  padding: 10px;
+}
+#section-news h2 {
   color: #FFFFFF;
 }
 .ej-section-text {
