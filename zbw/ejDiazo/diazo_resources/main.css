@@ -613,3 +613,10 @@ label.formQuestion {
 .double {
   font-size: 2em;
 }
+.news_date {
+  font-size: 0.6em;
+  font-weight: 500;
+  background-color: #607D8B;
+  color: #FFFFFF;
+  padding: 3px;
+}

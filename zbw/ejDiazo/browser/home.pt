@@ -110,7 +110,8 @@
 
 
     <div class="row">
-        <div class="col-md-6 col-md-offset-3 ej_section">
+        <div class="col-md-6 col-md-offset-3 ej_section"
+            tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;">
             <div id="section-news">
                 <i class="fa fa-bullhorn fa-3x" aria-hidden="true"></i>
                 <h2>Announcements</h2>
@@ -118,7 +119,8 @@
             <div class="ej-section-text">
                 <tal:newsitems tal:repeat="nitem view/get_news">
                     <p>
-                         <a tal:attributes="href string:${nitem/getURL}" tal:content="nitem/pretty_title_or_id" />
+                        <span class="news_date" tal:content="python:toLocalizedTime(nitem.Date)" /><br />
+                        <a tal:attributes="href string:${nitem/getURL}" tal:content="nitem/pretty_title_or_id" />
                      </p>
                 </tal:newsitems>
 
