@@ -8,7 +8,7 @@
 }
 #ejournal-paper-title .title {
   /*    font-size: 1.38em; */
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: normal;
 }
 #id_date {
@@ -184,11 +184,10 @@ h2 {
   font-size: 1.8em;
 }
 .meta {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   text-align: left;
-  border: 1px solid #B6B6B6;
-  margin-top: 60px;
-  background-color: #f4f4f4;
+  margin-top: 48px;
+  margin-bottom: 50px;
   border-radius: 0.5em;
   padding-bottom: 12px;
 }
@@ -207,6 +206,9 @@ h2 {
 }
 .yellow {
   color: #ffa000;
+}
+.red {
+  color: #d32f2f;
 }
 body,
 p,
