@@ -538,19 +538,56 @@ label.formQuestion {
     margin-top:-10px;
 }
 
+#top {
+    background-color: @darkPrimaryColor;
+}
+
 #ejumbo {
-    background-color: @primaryColor;
-    margin:-20px 0 1em 0;
-    padding:20px 10px 20px 10px;
+    padding:20px 10px 0px 0px;
     img {
-        display: block;
-        margin: auto;
+        //display: block;
+        //margin: auto;
+
         @media (min-width:564px) {
-            width:70%;
+            width:50%;
+            margin-left:1em;
         };
     };
 }
 
+#topinfo {
+    //background-color: @darkPrimaryColor;
+    //color:@textPrimaryColor;
+    color: @lightPrimaryColor;
+    padding: 0px 30px 20px 20px;
+    font-size:0.7em;
+    //margin-top: 1em;
+    text-align: right;
+    li {
+
+    };
+    img {
+        width: 11em;
+        margin-top:18px;
+    };
+
+    @media(max-width: 990px) {
+
+        img#zbwlogo {
+            margin-top: 0px;
+        }
+        li {
+            display: inline;
+            margin-right: 1.5em;
+            margin-left: -1em;
+        };
+    };
+
+    @media(max-width: 564px) {
+        text-align: center;
+    };
+
+}
 
 #featured {
     //margin-top: 1em;

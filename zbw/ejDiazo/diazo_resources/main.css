@@ -596,18 +596,41 @@ label.formQuestion {
   color: #727272;
   margin-top: -10px;
 }
-#ejumbo {
-  background-color: #607D8B;
-  margin: -20px 0 1em 0;
-  padding: 20px 10px 20px 10px;
+#top {
+  background-color: #455A64;
 }
-#ejumbo img {
-  display: block;
-  margin: auto;
+#ejumbo {
+  padding: 20px 10px 0px 0px;
 }
 @media (min-width: 564px) {
   #ejumbo img {
-    width: 70%;
+    width: 50%;
+    margin-left: 1em;
+  }
+}
+#topinfo {
+  color: #CFD8DC;
+  padding: 0px 30px 20px 20px;
+  font-size: 0.7em;
+  text-align: right;
+}
+#topinfo img {
+  width: 11em;
+  margin-top: 18px;
+}
+@media (max-width: 990px) {
+  #topinfo img#zbwlogo {
+    margin-top: 0px;
+  }
+  #topinfo li {
+    display: inline;
+    margin-right: 1.5em;
+    margin-left: -1em;
+  }
+}
+@media (max-width: 564px) {
+  #topinfo {
+    text-align: center;
   }
 }
 #featured {
