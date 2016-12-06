@@ -22,34 +22,96 @@
 
 <div class="container" id="sections">
 
-    <div class="row" tal:condition="teaser">
-        <div class="col-md-12" id="featured"  tal:define="picture nocall:teaser/picture">
+    <div class="row">
+
+        <div class="col-md-4 col-md-push-8">
+            <div id="section-head">
+                <h2>About</h2>
+            </div>
+            <div id="intro">
+                <p>
+                    <strong>Economics</strong> is a pathbreaking journal that adopts an open
+                    source approach to publication, viewing research as a cooperative
+                    enterprise between authors, editors, referees, and readers. It is
+                    one of only very few Open-Access Journals in Economics with an impact
+                    factor.
+                </p>
+                <ul>
+                    <li><i class="ai ai-open-access"></i>
+                    Free Open Access Publishing</li>
+                    <li><i class="fa fa-university" aria-hidden="true"></i>
+                    200+ prestigous Co-Editors</li>
+                    <li><i class="fa fa-comments" aria-hidden="true"></i>
+                        Open and fast Peer-review</li>
+                    <li><i class="fa fa-bar-chart" aria-hidden="true"></i>
+                    Strong Data Availability Policy</li>
+                </ul>
+                <p>Editor: Dennis Snower</p>
+                <div id="intro-logos">
+                    <ul>
+                        <li><img id="ifwlogo" src="++theme++zbw.ejDiazo/static/img/logo.ifw.en.bw.trans.invert.png" /></li>
+                        <li><img id="zbwlogo" src="++theme++zbw.ejDiazo/static/img/zbw-logo-trans-invert.png" /></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-8 col-md-pull-4" tal:condition="teaser" id="teaser"  tal:define="picture nocall:teaser/picture">
             <!-- <i class="fa fa-star-o fa-3x" aria-hidden="true"></i>
             <h2>Featured</h2> -->
             <!--<h2>Feature Block -- Perhaps and Maybe Long Long Article Title with many meaningless words, questions and
             teasing vocabulary</h2>-->
 
 
-            <div id="section-feature">
+            <!-- <div id="section-feature">
                 <h2 tal:content="teaser/title" />
                 <div style="float:right; padding:10px 0px 10px 25px" tal:condition="manager">
                     <a tal:attributes="href string:${teaser/absolute_url}" style="color:white">
                         <i class="fa fa-pencil" aria-hidden="true"></i>
                     </a>
                 </div>
-            </div>
 
-            <div class="ej_feature">
+            </div> -->
+
+
+
                 <!--<img src="++theme++zbw.ejDiazo/static/img/example.png" class="img-responsive"/> -->
                 <!--<img tal:attributes="src string:${teaser/absolute_url}/@@download/picture/${picture/filename}/" />-->
                 <!--<img tal:replace="structure teaser/@@images/picture/mini" /> -->
 
-                <figure id="teaser_image" >
+                <!-- <figure id="teaser_image" >
                     <img
                         tal:attributes="src string:${teaser/absolute_url}/@@download/picture/${picture/filename}"
                         class="img-responsive" />
                     <figcaption tal:condition="teaser/caption" tal:content="teaser/caption" />
-                </figure>
+                </figure> -->
+
+                <!-- <div id="featured">
+                    <i class="fa fa-bullhorn fa-3x" aria-hidden="true"></i>
+                    <h2>Featured</h2>
+                </div>
+                 -->
+                 <!-- <div id="section-head">
+                     <h2>Featured</h2>
+                 </div> -->
+
+                <tal:block tal:condition="teaser/picture">
+                    <div id="teaserhead"
+                        tal:attributes="style string:background-image:url(${teaser/absolute_url}/@@download/picture/${picture/filename}/)">
+                    <!-- <div id="teaserhead_nobg">
+                        <img tal:attributes="src string:${teaser/absolute_url}/@@download/picture/${picture/filename}/" class="img-responsive" /> -->
+                        <div id="teaser_title">
+                            <h2 tal:content="teaser/title" />
+                        </div>
+                    </div>
+                </tal:block>
+                <tal:block tal:condition="not:teaser/picture">
+                    <div id="teaserhead">
+                        <div id="teaser_title">
+                            <h2 tal:content="teaser/title" />
+                        </div>
+                    </div>
+                </tal:block>
 
                 <div id="teasertext" tal:content="structure teaser/teasertext"></div>
 
@@ -57,16 +119,16 @@
                     <div id="teaserlink"><a href="#" tal:attributes="href teaser/url"><span class="label label-teaser">Read More...</span></a></div>
                 </tal:block>
 
-            </div>
-
         </div>
+
 
     </div>
 
+
     <div class="row">
-        <div class="col-md-6 ej_section">
-            <div id="section-ja">
-                <i class="fa fa-check-circle-o fa-3x" aria-hidden"true" />
+        <div class="col-md-4 ej_section">
+            <div id="section-head">
+                <!-- <i class="fa fa-check-circle-o fa-3x" aria-hidden"true" /> -->
                 <h2>Journal Articles</h2>
             </div>
             <div class="ej-section-text">
@@ -82,9 +144,9 @@
             </div>
         </div>
 
-        <div class="col-md-6 ej_section">
-            <div id="section-dp">
-                <i class="fa fa-comments-o fa-3x" aria-hidden"true" />
+        <div class="col-md-4 ej_section">
+            <div id="section-head">
+                <!-- <i class="fa fa-comments-o fa-3x" aria-hidden"true" /> -->
                 <h2> Discussion Papers</h2>
             </div>
             <div class="ej-section-text">
@@ -106,10 +168,40 @@
                 </a></p>
             </div>
         </div>
+
+        <div class="col-md-4 ej_section">
+            <div id="section-head">
+                <!-- <i class="fa fa-comments-o fa-3x" aria-hidden"true" /> -->
+                <h2> Comments</h2>
+            </div>
+            <div class="ej-section-text">
+                <!--<p>The Economics Discussion Paper Series contains all recent contributions
+                that are open for discussion while pending acceptance for publication as
+                Journal Articles, as well as all older papers that have either
+                been accepted or rejected or that are withdrawn by the authors from
+                publication. Readers are asked to take part
+                in the discussion of a paper by uploading comments.</p>-->
+                <div class="latest"
+                    tal:define="papers view/get_latest_dp;
+                                Batch python:modules['Products.CMFPlone'].Batch;
+                                b_start python:request.get('b_start',0);
+                                papers_per_page python:100;
+                                ">
+                <metal:macro use-macro="context/paper_macros/macros/paper_list_entry" />
+                </div>
+                <p style="text-align:center"><a tal:attributes="href string:${portal_url}/economics/discussionpapers" href="#"><span class="label label-dp">All Discussion Papers</span>
+                </a></p>
+            </div>
+        </div>
+
+
+    <!-- end section row -->
     </div>
 
 
-    <div class="row">
+
+
+    <!-- <div class="row">
         <div class="col-md-6 col-md-offset-3 ej_section"
             tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;">
             <div id="section-news">
@@ -127,7 +219,7 @@
             </div>
         </div>
     </div>
-
+ -->
 
 
 

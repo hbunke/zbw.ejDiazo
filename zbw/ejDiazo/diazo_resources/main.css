@@ -430,15 +430,13 @@ h2 .fa {
   background-color: #00BCD4;
 }
 a i.fa,
-li i.fa {
+li i.fa,
+li i.ai {
   margin-right: 10px;
 }
-.label-ja {
-  background-color: #00796b;
-  font-size: 1em;
-}
+.label-ja,
 .label-dp {
-  background-color: #ffa000;
+  background-color: #607D8B;
   font-size: 1em;
 }
 .paper_list_item {
@@ -530,28 +528,12 @@ input[type='submit'] {
   line-height: 1.25em;
   font-size: 3rem;
 }
-#section-ja {
-  background-color: #00796b;
+#section-head {
+  background-color: #00BCD4;
   color: #FFFFFF;
   padding: 10px;
 }
-#section-ja h2 {
-  color: #FFFFFF;
-}
-#section-dp {
-  background-color: #ffa000;
-  color: #FFFFFF;
-  padding: 10px;
-}
-#section-dp h2 {
-  color: #FFFFFF;
-}
-#section-news {
-  background-color: #607D8B;
-  color: #FFFFFF;
-  padding: 10px;
-}
-#section-news h2 {
+#section-head h2 {
   color: #FFFFFF;
 }
 .ej-section-text {
@@ -602,9 +584,14 @@ label.formQuestion {
 #ejumbo {
   padding: 20px 10px 0px 0px;
 }
+#ejumbo img {
+  display: block;
+  margin: auto;
+}
 @media (min-width: 564px) {
   #ejumbo img {
     width: 50%;
+    max-width: 550px;
     margin-left: 1em;
   }
 }
@@ -633,16 +620,13 @@ label.formQuestion {
     text-align: center;
   }
 }
-#featured {
-  padding: 0;
-}
-#featured a {
-  color: #212121;
-}
 .label-teaser {
   background-color: #607D8B;
   color: #FFFFFF;
   font-size: 1.25em;
+}
+#teaser {
+  margin-bottom: 2em;
 }
 #teaserlink {
   text-align: center;
@@ -678,4 +662,71 @@ label.formQuestion {
   background-color: #607D8B;
   color: #FFFFFF;
   padding: 3px;
+}
+#teaserhead {
+  height: 400px;
+  margin-bottom: 1em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+#teaserhead_nobg {
+  margin-bottom: 2em;
+}
+#teaser_title {
+  float: left;
+  width: 75%;
+  position: relative;
+  top: 60%;
+  left: 0px;
+  background-color: #607D8B;
+  padding: 18px;
+  color: #FFFFFF;
+  opacity: 0.9;
+}
+#featured {
+  background-color: #607D8B;
+  color: #FFFFFF;
+  padding: 10px;
+}
+#featured h2 {
+  color: #FFFFFF;
+  margin-left: 10px;
+}
+#intro {
+  padding: 18px 18px 0px 18px;
+  background-color: #607D8B;
+  margin-bottom: 2em;
+  text-align: left;
+}
+#intro p,
+#intro li {
+  font-size: 1.5rem !important;
+  color: white;
+}
+#intro a {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+#intro img {
+  max-width: 150px;
+  margin-top: 12px;
+}
+#intro ul {
+  list-style: none inside;
+  margin-left: -30px;
+}
+#intro li {
+  display: inline-block;
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+#intro #intro-logos {
+  text-align: center;
+  margin: auto;
+  display: auto;
+}
+#introhead {
+  color: white;
 }
