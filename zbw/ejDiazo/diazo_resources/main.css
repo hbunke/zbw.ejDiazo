@@ -528,13 +528,16 @@ input[type='submit'] {
   line-height: 1.25em;
   font-size: 3rem;
 }
-#section-head {
+.section-head {
   background-color: #00BCD4;
   color: #FFFFFF;
   padding: 10px;
 }
-#section-head h2 {
+.section-head h2 {
   color: #FFFFFF;
+  font-size: 1.25em;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .ej-section-text {
   padding: 2em;
@@ -590,7 +593,7 @@ label.formQuestion {
 }
 @media (min-width: 564px) {
   #ejumbo img {
-    width: 50%;
+    width: 40%;
     max-width: 550px;
     margin-left: 1em;
   }
@@ -669,6 +672,7 @@ label.formQuestion {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
+  margin-top: 2em;
 }
 #teaserhead_nobg {
   margin-bottom: 2em;
@@ -677,12 +681,15 @@ label.formQuestion {
   float: left;
   width: 75%;
   position: relative;
-  top: 60%;
+  top: 33%;
   left: 0px;
   background-color: #607D8B;
   padding: 18px;
   color: #FFFFFF;
   opacity: 0.9;
+}
+#teaser_title h2 {
+  font-size: 2em;
 }
 #featured {
   background-color: #607D8B;
@@ -729,4 +736,17 @@ label.formQuestion {
 }
 #introhead {
   color: white;
+}
+.blockH {
+  padding-bottom: 6px;
+  margin-bottom: 0em;
+}
+.blockH h2 {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: #727272;
+  line-height: 0.9em;
+}
+.headT {
+  background-color: #607D8B;
 }

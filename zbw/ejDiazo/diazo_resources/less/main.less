@@ -447,12 +447,15 @@ input[type='submit'] {
 
 
 
-#section-head {
+.section-head {
     background-color: @accentColor;
     color: @textPrimaryColor;
     padding: 10px;
     h2 {
         color:@textPrimaryColor;
+        font-size: 1.25em;
+        font-weight: 600;
+        text-transform: uppercase;
     }
 };
 
@@ -526,7 +529,7 @@ label.formQuestion {
         margin: auto;
 
         @media (min-width:564px) {
-            width:50%;
+            width:40%;
             max-width: 550px;
             margin-left:1em;
         };
@@ -629,6 +632,7 @@ label.formQuestion {
     background-size: cover;
     background-repeat:no-repeat;
     background-position: top center;
+    margin-top: 2em;
 
  }
  #teaserhead_nobg {
@@ -643,12 +647,15 @@ label.formQuestion {
     float: left;
     width: 75%;
     position: relative;
-    top: 60%;
+    top: 33%;
     left: 0px;
     background-color: @primaryColor;
     padding: 18px;
     color: @textPrimaryColor;
-    opacity: 0.9
+    opacity: 0.9;
+    h2 {
+        font-size:2em;
+    }
 }
 
 
@@ -711,4 +718,22 @@ label.formQuestion {
 #introhead {
     //background-color: @accentColor;
     color: white;
+}
+
+
+.blockH {
+    h2 {
+        text-transform: uppercase;;
+        font-size: 1.4rem;
+        color: @secondaryTextColor;
+        line-height: 0.9em;
+
+    };
+    //border-bottom: 1px solid @dividerColor;
+    padding-bottom: 6px;
+    margin-bottom: 0em;
+};
+
+.headT {
+    background-color: @primaryColor;
 }

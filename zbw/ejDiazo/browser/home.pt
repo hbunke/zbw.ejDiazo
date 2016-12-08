@@ -25,7 +25,7 @@
     <div class="row">
 
         <div class="col-md-4 col-md-push-8">
-            <div id="section-head">
+            <div class="section-head">
                 <h2>About</h2>
             </div>
             <div id="intro">
@@ -56,7 +56,14 @@
             </div>
 
         </div>
-        <div class="col-md-8 col-md-pull-4" tal:condition="teaser" id="teaser"  tal:define="picture nocall:teaser/picture">
+        <div class="col-md-7 col-md-pull-4" tal:condition="teaser" id="teaser"  tal:define="picture nocall:teaser/picture">
+
+            <!-- <div class="blockH">
+                <h2>Featured</h2>
+            </div> -->
+
+
+
             <!-- <i class="fa fa-star-o fa-3x" aria-hidden="true"></i>
             <h2>Featured</h2> -->
             <!--<h2>Feature Block -- Perhaps and Maybe Long Long Article Title with many meaningless words, questions and
@@ -91,13 +98,16 @@
                     <h2>Featured</h2>
                 </div>
                  -->
-                 <!-- <div id="section-head">
+                 <!-- <div class="section-head">
                      <h2>Featured</h2>
                  </div> -->
 
                 <tal:block tal:condition="teaser/picture">
                     <div id="teaserhead"
                         tal:attributes="style string:background-image:url(${teaser/absolute_url}/@@download/picture/${picture/filename}/)">
+                        <div class="section-head">
+                            <h2>Featured</h2>
+                        </div>
                     <!-- <div id="teaserhead_nobg">
                         <img tal:attributes="src string:${teaser/absolute_url}/@@download/picture/${picture/filename}/" class="img-responsive" /> -->
                         <div id="teaser_title">
@@ -127,7 +137,7 @@
 
     <div class="row">
         <div class="col-md-4 ej_section">
-            <div id="section-head">
+            <div class="section-head">
                 <!-- <i class="fa fa-check-circle-o fa-3x" aria-hidden"true" /> -->
                 <h2>Journal Articles</h2>
             </div>
@@ -145,7 +155,7 @@
         </div>
 
         <div class="col-md-4 ej_section">
-            <div id="section-head">
+            <div class="section-head">
                 <!-- <i class="fa fa-comments-o fa-3x" aria-hidden"true" /> -->
                 <h2> Discussion Papers</h2>
             </div>
@@ -170,7 +180,7 @@
         </div>
 
         <div class="col-md-4 ej_section">
-            <div id="section-head">
+            <div class="section-head">
                 <!-- <i class="fa fa-comments-o fa-3x" aria-hidden"true" /> -->
                 <h2> Comments</h2>
             </div>
