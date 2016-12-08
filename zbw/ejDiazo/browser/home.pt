@@ -58,69 +58,20 @@
         </div>
         <div class="col-md-7 col-md-pull-4" tal:condition="teaser" id="teaser"  tal:define="picture nocall:teaser/picture">
 
-            <!-- <div class="blockH">
-                <h2>Featured</h2>
-            </div> -->
-
-
-
-            <!-- <i class="fa fa-star-o fa-3x" aria-hidden="true"></i>
-            <h2>Featured</h2> -->
-            <!--<h2>Feature Block -- Perhaps and Maybe Long Long Article Title with many meaningless words, questions and
-            teasing vocabulary</h2>-->
-
-
-            <!-- <div id="section-feature">
-                <h2 tal:content="teaser/title" />
-                <div style="float:right; padding:10px 0px 10px 25px" tal:condition="manager">
-                    <a tal:attributes="href string:${teaser/absolute_url}" style="color:white">
-                        <i class="fa fa-pencil" aria-hidden="true"></i>
-                    </a>
-                </div>
-
-            </div> -->
-
-
-
-                <!--<img src="++theme++zbw.ejDiazo/static/img/example.png" class="img-responsive"/> -->
-                <!--<img tal:attributes="src string:${teaser/absolute_url}/@@download/picture/${picture/filename}/" />-->
-                <!--<img tal:replace="structure teaser/@@images/picture/mini" /> -->
-
-                <!-- <figure id="teaser_image" >
-                    <img
-                        tal:attributes="src string:${teaser/absolute_url}/@@download/picture/${picture/filename}"
-                        class="img-responsive" />
-                    <figcaption tal:condition="teaser/caption" tal:content="teaser/caption" />
-                </figure> -->
-
-                <!-- <div id="featured">
-                    <i class="fa fa-bullhorn fa-3x" aria-hidden="true"></i>
-                    <h2>Featured</h2>
-                </div>
-                 -->
-                 <!-- <div class="section-head">
-                     <h2>Featured</h2>
-                 </div> -->
-
-                <tal:block tal:condition="teaser/picture">
+                <tal:block tal:condition="picture">
                     <div id="teaserhead"
                         tal:attributes="style string:background-image:url(${teaser/absolute_url}/@@download/picture/${picture/filename}/)">
-                        <div class="section-head">
-                            <h2>Featured</h2>
-                        </div>
-                    <!-- <div id="teaserhead_nobg">
-                        <img tal:attributes="src string:${teaser/absolute_url}/@@download/picture/${picture/filename}/" class="img-responsive" /> -->
+
                         <div id="teaser_title">
                             <h2 tal:content="teaser/title" />
                         </div>
                     </div>
                 </tal:block>
-                <tal:block tal:condition="not:teaser/picture">
-                    <div id="teaserhead">
+
+                <tal:block tal:condition="not:picture">
                         <div id="teaser_title">
                             <h2 tal:content="teaser/title" />
                         </div>
-                    </div>
                 </tal:block>
 
                 <div id="teasertext" tal:content="structure teaser/teasertext"></div>

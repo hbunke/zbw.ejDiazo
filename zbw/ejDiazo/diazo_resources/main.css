@@ -513,7 +513,7 @@ input[type='submit'] {
   color: #607D8B;
 }
 #sections {
-  font-weight: 300;
+  font-weight: 500;
 }
 #sections h2 {
   display: inline;
@@ -630,6 +630,7 @@ label.formQuestion {
 }
 #teaser {
   margin-bottom: 2em;
+  margin-top: 2em;
 }
 #teaserlink {
   text-align: center;
@@ -638,6 +639,9 @@ label.formQuestion {
 }
 #teaserlink div {
   border: none;
+}
+#teasertext {
+  clear: both;
 }
 #teaser_image {
   margin: 0 0 1em 0;
@@ -667,29 +671,29 @@ label.formQuestion {
   padding: 3px;
 }
 #teaserhead {
-  height: 400px;
+  height: 300px;
   margin-bottom: 1em;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center;
-  margin-top: 2em;
+  background-position: top right;
 }
 #teaserhead_nobg {
   margin-bottom: 2em;
 }
 #teaser_title {
   float: left;
-  width: 75%;
+  width: 50%;
   position: relative;
-  top: 33%;
+  top: 1em;
   left: 0px;
-  background-color: #607D8B;
+  background-color: #00BCD4;
   padding: 18px;
   color: #FFFFFF;
-  opacity: 0.9;
+  margin-bottom: 2em;
 }
 #teaser_title h2 {
-  font-size: 2em;
+  font-size: 1.44em;
+  font-weight: 600;
 }
 #featured {
   background-color: #607D8B;
@@ -702,6 +706,7 @@ label.formQuestion {
 }
 #intro {
   padding: 18px 18px 0px 18px;
+  font-weight: 300;
   background-color: #607D8B;
   margin-bottom: 2em;
   text-align: left;
@@ -736,17 +741,4 @@ label.formQuestion {
 }
 #introhead {
   color: white;
-}
-.blockH {
-  padding-bottom: 6px;
-  margin-bottom: 0em;
-}
-.blockH h2 {
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  color: #727272;
-  line-height: 0.9em;
-}
-.headT {
-  background-color: #607D8B;
 }
