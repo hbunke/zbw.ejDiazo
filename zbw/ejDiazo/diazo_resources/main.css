@@ -345,7 +345,7 @@ ul.nav {
 #content-views,
 .contentViews,
 #contentActionMenus {
-  background-color: #607D8B;
+  background-color: #212121;
 }
 #edit-bar {
   /*border: 0.25em solid @ploneEditBarColor;*/
@@ -356,18 +356,18 @@ ul.nav {
   margin-top: 0px;
 }
 #contentActionMenus {
-  background: #607D8B;
+  background: #212121;
   border-radius: 0px;
   position: relative;
   top: 0em;
   right: 0em;
 }
 #contentActionMenus dl.actionMenu.activated dd {
-  border-bottom: 0.5em solid #607D8B;
+  border-bottom: 0.5em solid #212121;
 }
 #contentActionMenus dl.actionMenu a,
 #contentActionMenus dl.actionMenu.activated dd {
-  background-color: #607D8B;
+  background-color: #212121;
   color: #FFFFFF;
   z-index: 5;
 }
@@ -436,15 +436,23 @@ li i.ai {
 }
 .label-ja,
 .label-dp {
+  font-size: 0.8em;
+}
+.label {
+  background-color: #455A64;
+}
+.label:hover {
   background-color: #607D8B;
-  font-size: 1em;
 }
 .paper_list_item {
   font-size: 1.25em;
 }
 .paper_list_item .label {
+  background-color: #607D8B;
   line-height: 1.5 !important;
-  font-size: 1em;
+  font-size: 0.7em;
+  padding: 3px;
+  border-radius: 0;
 }
 .eJournal_paper_list .pagination {
   text-align: center;
@@ -485,6 +493,8 @@ li i.ai {
 }
 #sorted_by_form {
   background-color: #CFD8DC;
+  padding: 6px 3px 6px 3px;
+  line-height: 2em;
 }
 #sorted_by_form select {
   margin-right: 25px;
@@ -501,7 +511,7 @@ input[type='submit'] {
   margin-bottom: 0;
 }
 .ej_section {
-  margin-bottom: 5em;
+  margin-bottom: 3em;
 }
 .ej_section h2 {
   padding-left: 12px;
@@ -513,7 +523,7 @@ input[type='submit'] {
   color: #607D8B;
 }
 #sections {
-  font-weight: 500;
+  font-weight: 400;
 }
 #sections h2 {
   display: inline;
@@ -539,12 +549,21 @@ input[type='submit'] {
   font-weight: 600;
   text-transform: uppercase;
 }
-.ej-section-text {
-  padding: 2em;
-  border: 1px solid #B6B6B6;
+.latest-head {
+  padding: 10px;
+  background-color: #00BCD4;
+  color: #FFFFFF;
+}
+.latest-head h2 {
+  font-size: 1.25em;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .latest {
   margin-top: 24px;
+}
+.latest .paper_list_item {
+  margin-left: 0.1em;
 }
 #content ul.formTabs {
   border: none;
@@ -624,9 +643,8 @@ label.formQuestion {
   }
 }
 .label-teaser {
-  background-color: #607D8B;
   color: #FFFFFF;
-  font-size: 1.25em;
+  font-size: 1.1em;
 }
 #teaser {
   margin-bottom: 2em;
@@ -634,14 +652,23 @@ label.formQuestion {
 }
 #teaserlink {
   text-align: center;
-  margin-top: 2rem;
   margin-bottom: 5em;
 }
-#teaserlink div {
-  border: none;
+.readmorelink {
+  background-color: #607D8B;
+  padding: 6px;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+.readmorelink:hover {
+  background-color: #CFD8DC;
 }
 #teasertext {
   clear: both;
+}
+#teasertext.nopic {
+  margin-left: 2em;
+  margin-right: 2em;
 }
 #teaser_image {
   margin: 0 0 1em 0;
@@ -682,7 +709,7 @@ label.formQuestion {
 }
 #teaser_title {
   float: left;
-  width: 50%;
+  max-width: 55%;
   position: relative;
   top: 1em;
   left: 0px;
@@ -714,7 +741,7 @@ label.formQuestion {
 #intro p,
 #intro li {
   font-size: 1.5rem !important;
-  color: white;
+  color: #FFFFFF;
 }
 #intro a {
   color: white;

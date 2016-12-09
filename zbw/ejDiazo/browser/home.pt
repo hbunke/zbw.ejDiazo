@@ -26,6 +26,7 @@
 
         <div class="col-md-4 col-md-push-8">
             <div class="section-head">
+                <!-- <i class="fa fa-info-circle fa-2x" aria-hidden="true"></i> -->
                 <h2>About</h2>
             </div>
             <div id="intro">
@@ -66,125 +67,113 @@
                             <h2 tal:content="teaser/title" />
                         </div>
                     </div>
+                    <div id="teasertext" tal:content="structure teaser/teasertext"></div>
+                    <tal:block tal:condition="teaser/url">
+                        <div id="teaserlink"><a href="#" tal:attributes="href teaser/url" class="readmorelink">Read More</a></div>
+                    </tal:block>
                 </tal:block>
 
                 <tal:block tal:condition="not:picture">
                         <div id="teaser_title">
                             <h2 tal:content="teaser/title" />
                         </div>
+                        <div id="teasertext" tal:content="structure teaser/teasertext" class="nopic"></div>
+
+                        <tal:block tal:condition="teaser/url">
+                            <div id="teaserlink"><a href="#" tal:attributes="href teaser/url">Read More</a></div>
+                        </tal:block>
                 </tal:block>
 
-                <div id="teasertext" tal:content="structure teaser/teasertext"></div>
 
-                <tal:block tal:condition="teaser/url">
-                    <div id="teaserlink"><a href="#" tal:attributes="href teaser/url"><span class="label label-teaser">Read More...</span></a></div>
-                </tal:block>
 
         </div>
-
-
     </div>
 
 
     <div class="row">
-        <div class="col-md-4 ej_section">
-            <div class="section-head">
-                <!-- <i class="fa fa-check-circle-o fa-3x" aria-hidden"true" /> -->
-                <h2>Journal Articles</h2>
-            </div>
-            <div class="ej-section-text">
-                <div class="latest"
-                    tal:define="papers view/get_latest_ja;
-                                Batch python:modules['Products.CMFPlone'].Batch;
-                                b_start python:request.get('b_start',0);
-                                papers_per_page python:100;">
-                    <metal:macro use-macro="context/paper_macros/macros/paper_list_entry" />
-                </div>
-                    <p style="text-align:center"><a href="#" tal:attributes="href string:${portal_url}/economics/journalarticles"><span class="label label-ja">All Journal Articles</span>
+        <div class="col-md-12">
+            <!-- <div class="section-head" style="margin-bottom: 2em;">
+                <h2>Latest</h2>
+            </div> -->
+
+            <div class="row">
+
+                <div class="col-md-4 ej_section">
+                    <div class="latest-head">
+                        <i class="fa fa-check-circle-o fa-2x" aria-hidden"true" />
+                        <h2>
+                            Journal Articles</h2>
+                    </div>
+                    <div class="ej-section-text">
+                        <div class="latest"
+                            tal:define="papers view/get_latest_ja;
+                                        Batch python:modules['Products.CMFPlone'].Batch;
+                                        b_start python:request.get('b_start',0);
+                                        papers_per_page python:100;">
+                            <metal:macro use-macro="context/paper_macros/macros/paper_list_entry" />
+                        </div>
+
+                    </div>
+                    <p style="text-align:center"><a href="#" tal:attributes="href string:${portal_url}/economics/journalarticles" class="readmorelink">All Journal Articles
                         </a></p>
-            </div>
-        </div>
-
-        <div class="col-md-4 ej_section">
-            <div class="section-head">
-                <!-- <i class="fa fa-comments-o fa-3x" aria-hidden"true" /> -->
-                <h2> Discussion Papers</h2>
-            </div>
-            <div class="ej-section-text">
-                <!--<p>The Economics Discussion Paper Series contains all recent contributions
-                that are open for discussion while pending acceptance for publication as
-                Journal Articles, as well as all older papers that have either
-                been accepted or rejected or that are withdrawn by the authors from
-                publication. Readers are asked to take part
-                in the discussion of a paper by uploading comments.</p>-->
-                <div class="latest"
-                    tal:define="papers view/get_latest_dp;
-                                Batch python:modules['Products.CMFPlone'].Batch;
-                                b_start python:request.get('b_start',0);
-                                papers_per_page python:100;
-                                ">
-                <metal:macro use-macro="context/paper_macros/macros/paper_list_entry" />
                 </div>
-                <p style="text-align:center"><a tal:attributes="href string:${portal_url}/economics/discussionpapers" href="#"><span class="label label-dp">All Discussion Papers</span>
-                </a></p>
-            </div>
-        </div>
 
-        <div class="col-md-4 ej_section">
-            <div class="section-head">
-                <!-- <i class="fa fa-comments-o fa-3x" aria-hidden"true" /> -->
-                <h2> Comments</h2>
-            </div>
-            <div class="ej-section-text">
-                <!--<p>The Economics Discussion Paper Series contains all recent contributions
-                that are open for discussion while pending acceptance for publication as
-                Journal Articles, as well as all older papers that have either
-                been accepted or rejected or that are withdrawn by the authors from
-                publication. Readers are asked to take part
-                in the discussion of a paper by uploading comments.</p>-->
-                <div class="latest"
-                    tal:define="papers view/get_latest_dp;
-                                Batch python:modules['Products.CMFPlone'].Batch;
-                                b_start python:request.get('b_start',0);
-                                papers_per_page python:100;
-                                ">
-                <metal:macro use-macro="context/paper_macros/macros/paper_list_entry" />
+                <div class="col-md-4 ej_section">
+                    <div class="latest-head">
+                        <i class="fa fa-comments-o fa-2x" aria-hidden"true" />
+                        <h2> Discussion Papers</h2>
+                    </div>
+                    <div class="ej-section-text">
+
+                        <div class="latest"
+                            tal:define="papers view/get_latest_dp;
+                                        Batch python:modules['Products.CMFPlone'].Batch;
+                                        b_start python:request.get('b_start',0);
+                                        papers_per_page python:100;
+                                        ">
+                        <metal:macro use-macro="context/paper_macros/macros/paper_list_entry" />
+                        </div>
+                    </div>
+                    <p style="text-align:center"><strong><a tal:attributes="href string:${portal_url}/economics/discussionpapers" class="readmorelink">All Discussion Papers
+                    </a></strong></p>
                 </div>
-                <p style="text-align:center"><a tal:attributes="href string:${portal_url}/economics/discussionpapers" href="#"><span class="label label-dp">All Discussion Papers</span>
-                </a></p>
-            </div>
-        </div>
+
+                <div class="col-md-4 ej_section">
+                    <div class="latest-head">
+                        <i class="fa fa-reply fa-2x" aria-hidden"true" />
+                        <h2>Comments</h2>
+                    </div>
+                    <div class="ej-section-text">
+                        <div class="latest">
+                            <div tal:repeat="comment view/get_recent_comments" style="margin-left:1em; margin-bottom: 1em;">
+                                <tal:block tal:define="comment_view comment/@@commentView;
+                                                    parent  comment_view/getParent">
 
 
-    <!-- end section row -->
-    </div>
+                                    <span tal:replace="comment_view/getFullname" /><br />
+                                    <a href="#" tal:attributes="href comment_view/getCommentURL">
+                                        <strong><span tal:replace="comment/subject" /></strong>
+                                    </a><br />
+                                    <span class="paperlist_details">
+                                    (on <span tal:replace="parent/@@paperView/authors_as_string" />:
+                                    <a tal:attributes="href parent/absolute_url" style="font-weight:500 !important">
+                                        <span tal:replace="parent/Title" />
+                                    </a>)</span>
+                                </tal:block>
+                            </div>
 
 
+                        </div>
 
 
-    <!-- <div class="row">
-        <div class="col-md-6 col-md-offset-3 ej_section"
-            tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;">
-            <div id="section-news">
-                <i class="fa fa-bullhorn fa-3x" aria-hidden="true"></i>
-                <h2>Announcements</h2>
-            </div>
-            <div class="ej-section-text">
-                <tal:newsitems tal:repeat="nitem view/get_news">
-                    <p>
-                        <span class="news_date" tal:content="python:toLocalizedTime(nitem.Date)" /><br />
-                        <a tal:attributes="href string:${nitem/getURL}" tal:content="nitem/pretty_title_or_id" />
-                     </p>
-                </tal:newsitems>
+                    </div>
+                </div>
 
+
+                <!-- end section row -->
             </div>
         </div>
     </div>
- -->
-
-
-
-
 
 </div>
 
