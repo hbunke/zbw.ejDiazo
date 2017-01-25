@@ -91,14 +91,11 @@ div.comment-title {
 div.list-of-authors {
   margin-bottom: 5px;
 }
-div.ejournal-letters {
-  margin-top: 1em;
+.ejournal-letters {
+  margin-top: 2em;
 }
 div.ejournal-authors {
   margin-top: 1em;
-}
-.hasAuthors {
-  font-weight: bold;
 }
 /* used only in comment view */
 .eJournal_download_field {
@@ -707,20 +704,48 @@ label.formQuestion {
 #teaserhead_nobg {
   margin-bottom: 2em;
 }
+/*
+#teaser_title {
+    float: left;
+    max-width: 55%;
+    position: relative;
+    top: 1em;
+    left: 0px;
+    background-color: @accentColor;
+    padding: 18px;
+    color: @textPrimaryColor;
+    //opacity: 0.9;
+    margin-bottom: 2em;
+    h2 {
+        font-size:1.44em;
+        font-weight: 600;
+    }
+}
+*/
 #teaser_title {
   float: left;
-  max-width: 55%;
+  max-width: 66.6%;
   position: relative;
   top: 1em;
   left: 0px;
-  background-color: #00BCD4;
-  padding: 18px;
   color: #FFFFFF;
   margin-bottom: 2em;
 }
 #teaser_title h2 {
-  font-size: 1.44em;
+  font-size: 2em;
   font-weight: 600;
+  line-height: inherit;
+}
+@media (max-width: 564px) {
+  #teaser_title h2 {
+    font-size: 1.66em;
+  }
+}
+#teaser_title h2 span {
+  padding: 1px 0 1px 0;
+  background-color: #00BCD4;
+  box-decoration-break: clone;
+  box-shadow: 0.5rem 0 0 #00BCD4, -0.5rem 0 0 #00BCD4;
 }
 #featured {
   background-color: #607D8B;

@@ -25,10 +25,7 @@
 // TODO: find a lighter black
 @ploneEditBarColor: @primaryTextColor;
 
-@roboto: 'Roboto', sans-serif;
 @lato: 'Lato', sans-serif;
-@lora: 'Lora', serif;
-@slab: 'Roboto Slab', serif;
 
 @navFonts: @lato;
 @textFonts: @lato;
@@ -702,6 +699,7 @@ label.formQuestion {
     //background-color: @darkPrimaryColor;
  }
 
+/*
 #teaser_title {
     float: left;
     max-width: 55%;
@@ -718,6 +716,35 @@ label.formQuestion {
         font-weight: 600;
     }
 }
+*/
+
+#teaser_title {
+    float: left;
+    max-width: 66.6%;
+    position: relative;
+    top: 1em;
+    left: 0px;
+    color: @textPrimaryColor;
+    //opacity: 0.9;
+    margin-bottom: 2em;
+    h2 {
+        @media  (max-width: 564px) {
+            font-size:1.66em;
+        };
+        font-size:2em;
+        font-weight: 600;
+        line-height: inherit;
+        span {
+            padding: 1px 0 1px 0;
+            background-color: @accentColor;
+            box-decoration-break: clone;
+            box-shadow: 0.5rem 0 0 @accentColor, -0.5rem 0 0 @accentColor;
+            //text-transform: uppercase;
+        }
+    }
+}
+
+
 
 
 #featured {

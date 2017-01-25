@@ -64,7 +64,9 @@
                         tal:attributes="style string:background-image:url(${teaser/absolute_url}/@@download/picture/${picture/filename}/)">
 
                         <div id="teaser_title">
-                            <h2 tal:content="teaser/title" />
+                            <h2>
+                                <span tal:content="teaser/title" />
+                            </h2>
                         </div>
                     </div>
                     <div id="teasertext" tal:content="structure teaser/teasertext"></div>
