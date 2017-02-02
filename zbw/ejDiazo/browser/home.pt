@@ -27,31 +27,41 @@
         <div class="col-md-4 col-md-push-8">
             <div class="section-head">
                 <!-- <i class="fa fa-info-circle fa-2x" aria-hidden="true"></i> -->
-                <h2>About</h2>
+                <h2>At a glance</h2>
             </div>
             <div id="intro">
                 <p>
-                    <strong>Economics</strong> is a pathbreaking journal that adopts an open
-                    source approach to publication, viewing research as a cooperative
-                    enterprise between authors, editors, referees, and readers. It is
-                    one of only very few Open-Access Journals in Economics with an impact
-                    factor.
+                    The e-journal <strong>Economics</strong> is a modern type of
+                    academic journal covering all fields of economics. It views
+                    academic publishing as a cooperative enterprise between authors, editors,
+                    referees, and readers.
                 </p>
                 <ul>
                     <li><i class="ai ai-open-access"></i>
-                    Free Open Access Publishing</li>
+                    Open Access publishing</li>
                     <li><i class="fa fa-university" aria-hidden="true"></i>
-                    200+ prestigous Co-Editors</li>
+                    150+ renowned co-editors</li>
                     <li><i class="fa fa-comments" aria-hidden="true"></i>
-                        Open and fast Peer-review</li>
+                    Open peer review</li>
                     <li><i class="fa fa-bar-chart" aria-hidden="true"></i>
-                    Strong Data Availability Policy</li>
+                    Strong data availability policy</li>
+
+                    <li>
+                    <!--<i class="fa fa-money" aria-hidden="true"></i> -->
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                    No author fees</li>
+                    <li><i class="fa fa-line-chart" aria-hidden="true"></i>
+                        <a href="#">Impact factor</a>: 0.460,
+                            5-year: 0.635</li>
                 </ul>
+
                 <p>Editor: Dennis Snower</p>
                 <div id="intro-logos">
                     <ul>
-                        <li><img id="ifwlogo" src="++theme++zbw.ejDiazo/static/img/logo.ifw.en.bw.trans.invert.png" /></li>
-                        <li><img id="zbwlogo" src="++theme++zbw.ejDiazo/static/img/zbw-logo-trans-invert.png" /></li>
+                        <li><a href="http://www.ifw-kiel.de">
+                            <img id="ifwlogo" src="++theme++zbw.ejDiazo/static/img/logo.ifw.en.bw.trans.invert.png" /></a></li>
+                        <li><a href"http://zbw.eu">
+                            <img id="zbwlogo" src="++theme++zbw.ejDiazo/static/img/zbw-logo-trans-invert.png" /></a></li>
                     </ul>
                 </div>
             </div>
@@ -77,7 +87,7 @@
 
                 <tal:block tal:condition="not:picture">
                         <div id="teaser_title">
-                            <h2 tal:content="teaser/title" />
+                            <h2><span tal:content="teaser/title" /></h2>
                         </div>
                         <div id="teasertext" tal:content="structure teaser/teasertext" class="nopic"></div>
 

@@ -88,6 +88,7 @@
             <li><a href="{$portal_url}/conception/aims-and-scope">Aims and Scope</a></li>
             <li><a href="{$portal_url}/conception/review-process">Review Process</a></li>
             <li><a href="{$portal_url}/conception/archiving-and-dissemination">Indexing and Abstracting Services</a></li>
+            <li><a href="{$portal_url}/journal-metrics">Journal Metrics</a></li>
             <li><a href="{$portal_url}/conception/license-agreements">License Agreements</a></li>
 
             <li class="dropdown-header">Submission</li>

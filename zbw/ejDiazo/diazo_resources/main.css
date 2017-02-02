@@ -645,7 +645,6 @@ label.formQuestion {
 }
 #teaser {
   margin-bottom: 2em;
-  margin-top: 2em;
 }
 #teaserlink {
   text-align: center;
@@ -656,12 +655,20 @@ label.formQuestion {
   padding: 6px;
   font-size: 16px;
   color: #FFFFFF;
+  margin-top: 2em;
 }
 .readmorelink:hover {
   background-color: #CFD8DC;
 }
 #teasertext {
   clear: both;
+}
+#teasertext div,
+#teasertext li {
+  font-size: 1.3em;
+}
+#teasertext ul {
+  list-style-position: inside;
 }
 #teasertext.nopic {
   margin-left: 2em;
@@ -703,6 +710,7 @@ label.formQuestion {
 }
 #teaserhead_nobg {
   margin-bottom: 2em;
+  background-color: #00BCD4;
 }
 /*
 #teaser_title {
@@ -765,13 +773,13 @@ label.formQuestion {
 }
 #intro p,
 #intro li {
-  font-size: 1.5rem !important;
+  font-size: 1.44rem !important;
   color: #FFFFFF;
 }
 #intro a {
   color: white;
-  font-weight: bold;
-  text-decoration: underline;
+  font-weight: 300;
+  text-decoration: none;
 }
 #intro img {
   max-width: 150px;
