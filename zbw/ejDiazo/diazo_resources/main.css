@@ -601,17 +601,22 @@ label.formQuestion {
   background-color: #455A64;
 }
 #ejumbo {
-  padding: 20px 10px 0px 0px;
+  padding: 20px 0 0 0;
 }
 #ejumbo img {
   display: block;
   margin: auto;
 }
-@media (min-width: 564px) {
+@media (min-width: 615px) {
   #ejumbo img {
-    width: 40%;
-    max-width: 550px;
-    margin-left: 1em;
+    width: 100%;
+    max-width: 450px;
+  }
+}
+@media (max-width: 614px) {
+  #ejumbo img {
+    width: 100%;
+    max-width: 400px;
   }
 }
 #topinfo {

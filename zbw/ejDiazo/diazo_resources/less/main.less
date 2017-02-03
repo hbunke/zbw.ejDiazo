@@ -555,15 +555,21 @@ label.formQuestion {
 }
 
 #ejumbo {
-    padding:20px 10px 0px 0px;
+    padding:20px 0 0 0;
     img {
         display: block;
         margin: auto;
 
-        @media (min-width:564px) {
-            width:40%;
-            max-width: 550px;
-            margin-left:1em;
+        @media (min-width:615px) {
+            width:100%;
+            max-width: 450px;
+            // min-width: 400px;
+            // margin-left:1em;
+        };
+        @media (max-width:614px) {
+            width:100%;
+            max-width: 400px;
+            // min-width:250px;
         };
     };
 }
