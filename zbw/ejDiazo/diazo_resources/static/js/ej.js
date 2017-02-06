@@ -35,3 +35,16 @@ function hide_jumbo() {
     $(hidejumbo).hide();
     $(loggo).show();
 }
+
+var tlink = document.getElementById('togglelogo');
+var logo = document.getElementById('ejlogo');
+tlink.onclick = toggle
+
+function toggle() {
+    if (logo.hasAttribute("style")) {
+        logo.removeAttribute("style");
+    }
+    else {
+        logo.setAttribute('style', 'margin-left:1em');
+    }
+}

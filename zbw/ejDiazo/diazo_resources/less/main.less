@@ -536,10 +536,6 @@ label.formQuestion {
     padding-left: 0px;
 }
 
-#logo {
-    font-size: 2em;
-    letter-spacing: 0.26em;
-}
 
 #togglejumbo {
     text-align: right;
@@ -553,7 +549,24 @@ label.formQuestion {
     background-color: @darkPrimaryColor;
 }
 
+#togglelogo {
+    color: @textPrimaryColor;
+    margin-bottom: -5;
+    position: absolute;
+    top:0;
+    right: 3px;
+    z-index:100;
+    font-size:75%;
+    a {
+        color: @textPrimaryColor !important;
+    };
+    a:hover {
+        text-decoration:underline;
+    }
+};
+
 #ejumbo {
+
     padding:20px 0 0 0;
     img {
         display: block;
@@ -563,7 +576,7 @@ label.formQuestion {
             width:100%;
             max-width: 450px;
             // min-width: 400px;
-            // margin-left:1em;
+            //margin-left:1em;
         };
         @media (max-width:614px) {
             width:100%;
@@ -572,6 +585,7 @@ label.formQuestion {
         };
     };
 }
+
 
 #topinfo {
     //background-color: @darkPrimaryColor;
@@ -809,8 +823,11 @@ label.formQuestion {
         // white-space: nowrap;
     }
 
-    ul.if li {
+    ul.if {
+        text-align:center;
+        li {
         margin-bottom: 0;
+    };
     }
 
     #intro-logos {

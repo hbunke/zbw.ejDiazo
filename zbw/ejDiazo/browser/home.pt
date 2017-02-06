@@ -20,6 +20,7 @@
 
 
 
+
 <div class="container" id="sections">
 
     <div class="row">
@@ -58,7 +59,7 @@
                     <li><a href="#">5-year impact factor</a>: 0.635</li>
                 </ul>
 
-                <ul>
+                <ul class="if">
                     <li>Editor: Dennis Snower</li>
                 </ul>
                 <div id="intro-logos">
