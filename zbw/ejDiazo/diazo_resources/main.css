@@ -799,6 +799,9 @@ label.formQuestion {
   margin-right: 12px;
   margin-bottom: 12px;
 }
+#intro ul.if li {
+  margin-bottom: 0;
+}
 #intro #intro-logos {
   text-align: center;
   margin: auto;
@@ -806,4 +809,32 @@ label.formQuestion {
 }
 #introhead {
   color: white;
+}
+#searchform {
+  text-align: center;
+  font-size: 150%;
+}
+#ej-search-results .excerpt {
+  font-size: 0.75em !important;
+  color: #B6B6B6;
+}
+#ej-search-results .excerpt i {
+  color: #B6B6B6;
+}
+#ej-search-results #input_term {
+  width: 50% !important;
+}
+#ej-search-results #items_matching {
+  color: #727272;
+  margin-bottom: 33px;
+  text-align: left;
+}
+#ej-search-results #pagination {
+  text-align: center;
+}
+#ej-search-results dt {
+  font-size: 140%;
+  font-weight: normal;
+  line-height: 24px;
+  margin-top: 24px;
 }

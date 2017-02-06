@@ -30,12 +30,12 @@
                 <h2>At a glance</h2>
             </div>
             <div id="intro">
-                <p>
-                    The e-journal <strong>Economics</strong> is a modern type of
+                <ul>
+                    <li>The e-journal <strong>Economics</strong> is a modern type of
                     academic journal covering all fields of economics. It views
                     academic publishing as a cooperative enterprise between authors, editors,
-                    referees, and readers.
-                </p>
+                    referees, and readers.</li>
+                </ul>
                 <ul>
                     <li><i class="ai ai-open-access"></i>
                     Open Access publishing</li>
@@ -50,12 +50,17 @@
                     <!--<i class="fa fa-money" aria-hidden="true"></i> -->
                     <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                     No author fees</li>
-                    <li><i class="fa fa-line-chart" aria-hidden="true"></i>
-                        <a href="#">Impact factor</a>: 0.460,
-                            5-year: 0.635</li>
+
                 </ul>
 
-                <p>Editor: Dennis Snower</p>
+                <ul class="if">
+                    <li><a href="#">Impact factor</a>: 0.460</li>
+                    <li><a href="#">5-year impact factor</a>: 0.635</li>
+                </ul>
+
+                <ul>
+                    <li>Editor: Dennis Snower</li>
+                </ul>
                 <div id="intro-logos">
                     <ul>
                         <li><a href="http://www.ifw-kiel.de">

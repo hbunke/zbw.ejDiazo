@@ -133,9 +133,13 @@
             </li>
         </before>
 
-<!--
-        <replace css:theme-children="#search" css:content="#searchbox" />
-    -->
+
+        <replace css:theme-children="#search">
+            <form id="ejsearch" class="navbar-form collapse ej-search" role="search" action="{$portal_url}/ej-search">
+                <input type="text" class="form-control" placeholder="Search" name="SearchableText" id="SearchableText" />
+            </form>
+        </replace>
+
 
         <!-- Tabs
         <replace css:theme-children="#tabs" css:content-children="#portal-siteactions" />

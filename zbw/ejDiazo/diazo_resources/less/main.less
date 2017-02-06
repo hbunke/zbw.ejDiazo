@@ -759,7 +759,6 @@ label.formQuestion {
 
 
 
-
 #featured {
     background-color: @primaryColor;
     color: @textPrimaryColor;
@@ -776,6 +775,7 @@ label.formQuestion {
     font-weight: 300;
     p, li {
         font-size: 1.05em !important;
+        // font-size: 15px;
         //font-weight: 500;
         color: @textPrimaryColor;
         //color: @primaryTextColor;
@@ -808,6 +808,11 @@ label.formQuestion {
         margin-bottom: 12px;
         // white-space: nowrap;
     }
+
+    ul.if li {
+        margin-bottom: 0;
+    }
+
     #intro-logos {
         text-align: center;
         margin: auto;
@@ -821,4 +826,39 @@ label.formQuestion {
 #introhead {
     //background-color: @accentColor;
     color: white;
+}
+
+
+#searchform {
+    text-align:center;
+    font-size: 150%
+}
+
+#ej-search-results {
+    .excerpt {
+        font-size: 0.75em !important;
+        color: @dividerColor;
+        i {
+            color: @dividerColor;
+        };
+    };
+    #input_term {
+        width: 50% !important;
+    };
+    #items_matching {
+        color: @secondaryTextColor;
+        margin-bottom: 33px;
+        text-align: left;
+    };
+    #pagination {
+        text-align: center;
+    };
+
+    dt {
+        font-size:140%;
+        font-weight:normal;
+        line-height:24px;
+        margin-top:24px;
+    };
+
 }
