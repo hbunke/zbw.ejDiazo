@@ -722,12 +722,24 @@ label.formQuestion {
   margin-bottom: 1em;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: bottom center;
 }
 @media (max-width: 564px) {
   #teaserhead {
     background-size: cover;
   }
+}
+.caption {
+  text-align: center;
+  padding: 0 0 0 0;
+  height: 25px;
+  margin: -15px 0 0 0;
+  opacity: 0.5;
+  color: #727272;
+  font-weight: 500;
+  font-size: 0.75em;
+  margin-bottom: 1em;
+  text-transform: uppercase;
 }
 #teaserhead_nobg {
   margin-bottom: 2em;

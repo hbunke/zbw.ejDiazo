@@ -76,6 +76,7 @@
         <div class="col-md-7 col-md-pull-4" tal:condition="teaser" id="teaser"  tal:define="picture nocall:teaser/picture">
 
                 <tal:block tal:condition="picture">
+
                     <div id="teaserhead"
                         tal:attributes="style string:background-image:url(${teaser/absolute_url}/@@download/picture/${picture/filename}/)">
 
@@ -84,7 +85,12 @@
                                 <span tal:content="teaser/title" />
                             </h2>
                         </div>
+
+
+
                     </div>
+                    <div class="caption" tal:condition="teaser/caption" tal:content="teaser/caption" />
+
                     <div id="teasertext" tal:content="structure teaser/teasertext"></div>
                     <tal:block tal:condition="teaser/url">
                         <div id="teaserlink"><a href="#" tal:attributes="href teaser/url" class="readmorelink">Read More</a></div>
