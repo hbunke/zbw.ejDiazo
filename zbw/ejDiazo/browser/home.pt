@@ -77,38 +77,32 @@
         </div>
         <div class="col-md-7 col-md-pull-4" tal:condition="teaser" id="teaser"  tal:define="picture nocall:teaser/picture">
 
-                <tal:block tal:condition="picture">
-
-                    <div id="teaserhead"
-                        tal:attributes="style string:background-image:url(${teaser/absolute_url}/@@download/picture/${picture/filename}/)">
-
-                        <div id="teaser_title">
-                            <h2>
-                                <span tal:content="teaser/title" />
-                            </h2>
-                        </div>
-
-
-
+            <tal:block tal:condition="picture">
+                <div id="teaserhead"
+                    tal:attributes="style string:background-image:url(${teaser/absolute_url}/@@download/picture/${picture/filename}/)">
+                    <div metal:define-macro="teaser_title" id="teaser_title">
+                        <h2>
+                            <span tal:content="teaser/title" />
+                        </h2>
                     </div>
-                    <div class="caption" tal:condition="teaser/caption" tal:content="teaser/caption" />
 
-                    <div id="teasertext" tal:content="structure teaser/teasertext"></div>
-                    <tal:block tal:condition="teaser/url">
-                        <div id="teaserlink"><a href="#" tal:attributes="href teaser/url" class="readmorelink">Read More</a></div>
-                    </tal:block>
+                </div>
+                <div class="caption" tal:condition="teaser/caption" tal:content="teaser/caption" />
+                <div id="teasertext" tal:content="structure teaser/teasertext"></div>
+                <tal:block tal:condition="teaser/url">
+                    <div metal:define-macro="teaser_url" id="teaserlink">
+                        <a href="#" tal:attributes="href teaser/url" class="readmorelink">Read More</a>
+                    </div>
                 </tal:block>
+            </tal:block>
 
-                <tal:block tal:condition="not:picture">
-                        <div id="teaser_title">
-                            <h2><span tal:content="teaser/title" /></h2>
-                        </div>
-                        <div id="teasertext" tal:content="structure teaser/teasertext" class="nopic"></div>
-
-                        <tal:block tal:condition="teaser/url">
-                            <div id="teaserlink"><a href="#" tal:attributes="href teaser/url">Read More</a></div>
-                        </tal:block>
+            <tal:block tal:condition="not:picture">
+                <metal:macro use-macro="template/macros/teaser_title" />
+                <div id="teasertext" tal:content="structure teaser/teasertext" class="nopic"></div>
+                <tal:block tal:condition="teaser/url">
+                    <metal:macro use-macro="template/macros/teaser_url" />
                 </tal:block>
+            </tal:block>
 
 
 
