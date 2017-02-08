@@ -55,11 +55,13 @@
                 </ul>
 
                 <ul class="if">
-                    <li><a href="#">Impact factor</a>: 0.460</li>
-                    <li><a href="#">5-year impact factor</a>: 0.635</li>
+                    <li><i class="fa fa-certificate" aria-hidden="true"></i>
+                        <a href="#">Impact factor</a>: 0.460</li>
+                    <li><i class="fa fa-certificate" aria-hidden="true"></i>
+                        <a href="#">5-year impact factor</a>: 0.635</li>
                 </ul>
 
-                <ul class="if">
+                <ul style="margin-top: 18px;">
                     <li>Editor: Dennis Snower</li>
                 </ul>
                 <div id="intro-logos">
