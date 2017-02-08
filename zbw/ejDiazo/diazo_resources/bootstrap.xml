@@ -54,7 +54,7 @@
         <replace css:theme="#frontjumbo" css:if-content="#intro">
 
             <div class="container-fluid" id="top">
-                <div id="togglelogo"><a href="#">Toggle Logo</a></div>
+                <!-- <div id="togglelogo"><a href="#">Toggle Logo</a></div> -->
                 <div class="row">
                     <div id="ejumbo" class="col-md-12">
                         <img id="ejlogo" src="++theme++zbw.ejDiazo/static/img/logo.title.inv.slogan.png" class="img-responsive"
@@ -63,7 +63,6 @@
                 </div>
             </div>
         </replace>
-
 
         <!-- Special Areas Links -->
         <replace css:theme-children="#special_areas_menu">
