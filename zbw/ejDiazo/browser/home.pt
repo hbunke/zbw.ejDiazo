@@ -66,9 +66,9 @@
                 <div id="intro-logos">
                     <ul>
                         <li><a href="http://www.ifw-kiel.de">
-                            <img id="ifwlogo" src="++theme++zbw.ejDiazo/static/img/logo.ifw.en.bw.trans.invert.png" /></a></li>
-                        <li><a href"http://zbw.eu">
-                            <img id="zbwlogo" src="++theme++zbw.ejDiazo/static/img/zbw-logo-trans-invert.png" /></a></li>
+                            <img id="ifwlogo" src="++theme++zbw.ejDiazo/static/img/logo.ifw.en.bw.trans.invert.png" alt="intro logo ifw" /></a></li>
+                        <li><a href="http://zbw.eu">
+                            <img id="zbwlogo" src="++theme++zbw.ejDiazo/static/img/zbw-logo-trans-invert.png" alt="intro logo zbw" /></a></li>
                     </ul>
                 </div>
             </div>
@@ -119,7 +119,7 @@
 
                 <div class="col-md-4 ej_section">
                     <div class="latest-head">
-                        <i class="fa fa-check-circle-o fa-2x" aria-hidden"true" />
+                        <i class="fa fa-check-circle-o fa-2x" aria-hidden="true" />
                         <h2>
                             Journal Articles</h2>
                     </div>
@@ -139,7 +139,7 @@
 
                 <div class="col-md-4 ej_section">
                     <div class="latest-head">
-                        <i class="fa fa-comments-o fa-2x" aria-hidden"true" />
+                        <i class="fa fa-comments-o fa-2x" aria-hidden="true" />
                         <h2> Discussion Papers</h2>
                     </div>
                     <div class="ej-section-text">
@@ -159,7 +159,7 @@
 
                 <div class="col-md-4 ej_section">
                     <div class="latest-head">
-                        <i class="fa fa-reply fa-2x" aria-hidden"true" />
+                        <i class="fa fa-reply fa-2x" aria-hidden="true" />
                         <h2>Comments</h2>
                     </div>
                     <div class="ej-section-text">

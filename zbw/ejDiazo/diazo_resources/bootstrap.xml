@@ -44,9 +44,9 @@
             <a href="{$portal_url}/economics/discussionpapers">DISCUSSION PAPERS</a>
         </replace>
 
-        <replace css:theme="#logo">
+        <replace css:theme="#logo" css:if-not-content="#intro">
             <a class="navbar-brand" id="logo" href="{$portal_url}" title="The Open-Access, Open-Assessment E-Journal">
-                <img src="++theme++zbw.ejDiazo/static/img/logo_inv.png"  />
+                <img alt="logo header small" src="++theme++zbw.ejDiazo/static/img/logo_inv.png"  />
             </a>
         </replace>
 
@@ -54,11 +54,10 @@
         <replace css:theme="#frontjumbo" css:if-content="#intro">
 
             <div class="container-fluid" id="top">
-                <!-- <div id="togglelogo"><a href="#">Toggle Logo</a></div> -->
                 <div class="row">
                     <div id="ejumbo" class="col-md-12">
                         <img id="ejlogo" src="++theme++zbw.ejDiazo/static/img/logo.title.inv.slogan.png" class="img-responsive"
-                        />
+                         alt="title logo" />
                     </div>
                 </div>
             </div>
@@ -99,12 +98,12 @@
             <li class="dropdown-header">Events</li>
             <li><a href="{$portal_url}/events-1/scholeco15">Workshop: The Future of Scholarly Communications in Economics</a></li>
             <li><a href="{$portal_url}/community/events-1/prizes">Prizes</a></li>
+            <li><a href="{$portal_url}/cooperation-in-conferences">Cooperation in Conferences</a></li>
         </replace>
 
 
         <replace css:theme-children="#login_menu" css:content-children="#login_menu" href="@@ej_components" />
         <copy content='//*[@id="user_menu_title"]' theme='//*[@id="login_title"]' href="@@ej_components" />
-
 
         <before css:theme="#user_menu" if="$manager">
             <li class="dropdown" id="manager_menu" >
@@ -137,8 +136,6 @@
         <!-- Tabs
         <replace css:theme-children="#tabs" css:content-children="#portal-siteactions" />
     -->
-
-
         <!-- Personal tools
         <replace css:theme="#account-info" css:content="#portal-personaltools" />
     -->
@@ -149,15 +146,14 @@
         <copy attributes="action" css:theme="#searchbox" css:content="#portal-searchbox form" />
         <copy attributes="name" css:theme="#searchbox .search-quer" css:content="#portal-searchbox form .searchField" />
 
-
         <!-- Edit bar -->
         <before css:theme-children="#content" css:content="#edit-bar" />
 
-
         <!-- Portal messages -->
+        <!-- <replace css:content="#viewlet-above-content" css:theme-children="#viewlet-above-content" /> -->
 
         <!-- Main columns -->
-        <replace css:content-children="#content" css:theme-children="#content" />
+        <replace css:content-children="#portal-column-content" css:theme-children="#portal-column-content" />
         <!--<replace css:content-children="#portal-column-one" css:theme-children="#left-column" />-->
         <!--<replace css:content-children="#portal-column-two" css:theme-children="#right-column" />-->
 

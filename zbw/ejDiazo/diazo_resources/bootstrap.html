@@ -2,29 +2,24 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
     <title>Bootstrap, from Twitter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
+
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <!-- Optional theme
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
--->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-    <!--
-    <link href="static/css/theme.css" rel="stylesheet"> -->
+    <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
 
     <link href="static/css/ploneui.css" rel="stylesheet">
     <link href="main.css" rel="stylesheet">
-    <link rel="stylesheet" href="static/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="static/css/academicons.min.css" />
+    <!-- <link rel="stylesheet" href="static/css/font-awesome.min.css" /> -->
+    <script src="https://use.fontawesome.com/82e2dc0106.js"></script>
 
+    <link rel="stylesheet" href="static/css/academicons.min.css" />
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -61,14 +56,14 @@
                         <span class="icon-bar"></span>
                     </button>
 
-                    <!-- LOGO replaced by Diazo ? -->
+                    <!-- LOGO replaced by Diazo -->
                     <div id="loggo" style='margin-top:-2px;'>
-                        <a class="navbar-brand" id="logo" href="#">Economics</a>
+                        <span id="logo" />
                     </div>
-                        <!-- <div id="logo_subtitle">The Open-Access, Open-Assessment E-Journal</div> -->
+
                 </div>
 
-                <div id="navbar" class="navbar-collapse collapse" aria-expanded="true">
+                <div id="navbar" class="navbar-collapse collapse" aria-expanded="true" role="navigation">
 
                     <ul class="nav navbar-nav">
                         <li id="journalarticles_link"><a href="#">ARTICLES</a></li>
@@ -79,22 +74,15 @@
                             SPECIAL AREAS
                             <b class="caret"></b>
                         </a>
-                            <ul class="dropdown-menu" id="special_areas_menu">
-                                <li>replaced by diazo rules</li>
-                            </ul>
+                            <ul class="dropdown-menu" id="special_areas_menu" />
                         </li>
-
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <!-- <i class="fa fa-info-circle fa-lg" aria-hidden="true"></i> -->
                                 ABOUT
                                 <b class="caret"></b>
                             </a>
-                            <ul class="dropdown-menu" id="about_economics">
-                                <li>replaced by diazo rules</li>
-                            </ul>
+                            <ul class="dropdown-menu" id="about_economics" />
                         </li>
-
                         <!-- Search -->
                         <li id="search_icon_link">
                             <a href="#ejsearch" data-toggle="collapse" aria-expanded="false" aria-controls="ejsearch">
@@ -106,63 +94,38 @@
                                 <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term" />
                             </form>
                         </li>
-
-
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
-
-
                         <!-- user menu -->
                         <li class="dropdown" id="user_menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <i class="fa fa-user" aria-hidden="true"></i> &nbsp;
-                                <span id="login_title">hallo welt</span>
+                                <span id="login_title">User Name</span>
                                 <b class="caret"></b>
                             </a>
-                            <ul class="dropdown-menu" id="login_menu">
-                                <li><a href="#">Link</a></li>
-                            </ul>
+                            <ul class="dropdown-menu" id="login_menu" />
                         </li>
-
-
-
-
                     </ul>
-
-
                 </div>
             </div>
         </div>
     </div>
 
-
-    <!--
-          <form id="searchbox" class="navbar-search pull-right">
-            <input type="text" class="search-query" placeholder="Search">
-          </form>
--->
-
     <div class="container">
         <div class="row">
-            <div class="col-md-12" id="content">
+            <div class="col-md-12" id="portal-column-content">
                 <h1>Main content</h1>
                 <p>
                     Main content placeholder
                 </p>
             </div>
         </div>
-
     </div>
 
 
-
     <div id="footer" class="footer">
-        <ul id="footnav" class="list-inline footer-links">
-            <li><a href="#">ARTICLES</a></li>
-            <li><a href="#">DISCUSSION PAPERS</a></li>
-        </ul>
-
+        <ul id="footnav" class="list-inline footer-links" />
         <ul class="list-inline">
                 <!-- Please also join us at: -->
             <li class="double"><a href="http://twitter.com/ej_economics"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -174,38 +137,20 @@
         <ul class="list-inline">
             <li style="margin-right:25px;">
             <a href="https://www.ifw-kiel.de/">
-            <img src="static/img/logo.ifw.en.bw.trans.invert.png" /></a></li>
+            <img alt="Footer Logo IfW" src="static/img/logo.ifw.en.bw.trans.invert.png" /></a></li>
 
             <li style="margin-left:25px;">
                 <a href="http://zbw.eu/en">
-            <img src="static/img/zbw-logo-trans-invert.png" /></a>
+            <img src="static/img/zbw-logo-trans-invert.png" alt="Footer Logo ZBW" /></a>
             </li>
 
         </ul>
     </div>
 
-<!--
-    <ul class="list-inline">
-        <li>
-        <img src="static/img/ifw_logo_en.png" /></li>
-        <li>
-        <img src="static/img/zbw-logo-trans.png" />
-        </li>
-
-    </ul>
--->
-
-    <!-- sticky footer
-<nav class="navbar navbar-default navbar-fixed-bottom">
-  <div class="container">
-    footer content
-  </div>
-</nav>
--->
 
 
-</body>
-<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="static/js/ej.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="static/js/ej.js"></script> -->
 
+    </body>
 </html>

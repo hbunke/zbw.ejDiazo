@@ -1083,4 +1083,9 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     text-decoration: none;
 }
 
+.visualClear {
+    clear:both;
+}
+
+
 /* @end */
