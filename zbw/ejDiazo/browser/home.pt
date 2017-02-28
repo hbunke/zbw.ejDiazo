@@ -32,34 +32,32 @@
             </div>
             <div id="intro">
                 <ul>
-                    <li>The e-journal <strong>Economics</strong> is a modern type of
-                    academic journal covering all fields of economics. It views
-                    academic publishing as a cooperative enterprise between authors, editors,
-                    referees, and readers.</li>
+                    <li>
+                    <strong>Economics</strong> is an online-only journal dedicated to
+                        publishing high quality original research across all areas of economics. It
+                        views academic publishing as a cooperative enterprise between authors, editors,
+                        referees, and readers.
+                    </li>
                 </ul>
                 <ul>
                     <li><i class="ai ai-open-access"></i>
-                    Open Access publishing</li>
+                    Open access publishing</li>
                     <li><i class="fa fa-university" aria-hidden="true"></i>
                     150+ renowned co-editors</li>
                     <li><i class="fa fa-comments" aria-hidden="true"></i>
                     Open peer review</li>
                     <li><i class="fa fa-bar-chart" aria-hidden="true"></i>
-                    Strong data availability policy</li>
-
+                    Data availability policy</li>
                     <li>
                     <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                     No author fees</li>
-
                 </ul>
-
                 <ul class="if">
                     <li><i class="fa fa-certificate" aria-hidden="true"></i>
                         <a href="journal-metrics">Impact factor</a>: 0.460</li>
                     <li><i class="fa fa-certificate" aria-hidden="true"></i>
                         <a href="journal-metrics">5-year impact factor</a>: 0.635</li>
                 </ul>
-
                 <ul style="margin-top: 18px;">
                     <li>Editor: Dennis Snower</li>
                 </ul>
