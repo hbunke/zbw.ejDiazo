@@ -26,6 +26,10 @@
         <after css:theme-children="html head" css:content="html head base" />
         <after css:theme-children="html head" css:content="html head script" />
 
+        <replace css:theme="#favicon">
+            <link id="favicon" rel="shortcut icon" type="image/x-icon" href="{portal_url}/++theme++zbw.ejDiazo/favicon.ico" />
+        </replace>
+
 
         <replace css:theme="#cookieconsent">
             <script type="text/javascript">
