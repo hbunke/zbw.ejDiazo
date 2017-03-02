@@ -31,9 +31,13 @@
         <li><a tal:attributes="href string:${portal_url}/portal_memberdata/${user/getId}/base_edit">Preferences</a></li>
     </tal:block>
 </ul>
-
-
 </tal:block>
+
+
+<div id="tracker">
+    <tal:block tal:replace="structure provider:plone.portalfooter" />
+</div>
+
 
 <!--
 <div id="abstract">

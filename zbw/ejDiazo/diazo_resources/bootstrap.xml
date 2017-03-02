@@ -107,6 +107,7 @@
 
 
         <replace css:theme-children="#login_menu" css:content-children="#login_menu" href="@@ej_components" />
+        <replace css:theme="#tracker" css:content-children="#tracker" href="@@ej_components" />
         <copy content='//*[@id="user_menu_title"]' theme='//*[@id="login_title"]' href="@@ej_components" />
 
         <before css:theme="#user_menu" if="$manager">
