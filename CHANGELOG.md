@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+v1.0.4
+------
+
+-   temporarily implement ejmember styles
+    this is just a workaround!
+
 
 v1.0.3
 ------
