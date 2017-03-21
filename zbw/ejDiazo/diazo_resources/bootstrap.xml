@@ -71,6 +71,7 @@
         <replace css:theme-children="#special_areas_menu">
             <li><a href="{$portal_url}/special-areas/surveys-and-overviews">Surveys and Overviews</a></li>
             <li><a href="{$portal_url}/special-areas/policy-papers">Policy Papers</a></li>
+            <li><a href="{$portal_url}/special-areas/g20-policy-papers">G20 Policy Papers</a></li>
             <li><a href="{$portal_url}/special-areas/replications">Replications</a></li>
             <li><a href="{$portal_url}/special-areas/special-issues">Special Issues</a></li>
             <li><a href="{$portal_url}/special-areas/topics">Topics</a></li>

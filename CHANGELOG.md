@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+v1.0.6
+------
+
+-   add G20 Policy Papers link in nav menu
+
 v1.0.5
 ------
 
