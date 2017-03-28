@@ -1087,5 +1087,10 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     clear:both;
 }
 
+.discreet {
+    font-size:0.9em;
+    color: gray;
+}
+
 
 /* @end */
