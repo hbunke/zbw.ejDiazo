@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+v1.0.5
+------
+
+-   add missing Plone CSS class `.discreet`
+
+
 v1.0.4
 ------
 
