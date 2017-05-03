@@ -8,18 +8,7 @@
 
 <div metal:fill-slot="main"
     tal:define="manager python:'Manager' in portal_state.member().getRolesInContext(context);
-                teaser view/get_teaser;">
-<!--
-<p id="togglejumbo">
-    <a id="showjumbo" href="#">Show Jumbo</a>
-    <a id="hidejumbo" href="#">Hide Jumbo</a>
-</p> -->
-<!-- <div id="ejumbo">
-        <img src="++theme++zbw.ejDiazo/static/img/logo.title.inv.slogan.png" class="img-responsive" />
-</div> -->
-
-
-
+    teaser view/get_teaser;">
 
 <div class="container" id="sections">
 
@@ -41,13 +30,17 @@
                 </ul>
                 <ul>
                     <li><i class="ai ai-open-access"></i>
-                    Open access publishing</li>
+                        <a tal:attributes="href string:${portal_url}/conception/aims-and-scope">Open access publishing</a>
+                    </li>
                     <li><i class="fa fa-university" aria-hidden="true"></i>
-                    150+ renowned co-editors</li>
+                        <a tal:attributes="href string:${portal_url}/community/co-editors">150+ renowned co-editors</a>
+                        </li>
                     <li><i class="fa fa-comments" aria-hidden="true"></i>
-                    Open peer review</li>
+                        <a tal:attributes="href string:${portal_url}/conception/review-process">Open peer review</a>
+                    </li>
                     <li><i class="fa fa-bar-chart" aria-hidden="true"></i>
-                    Data availability policy</li>
+                        <a tal:attributes="href string:${portal_url}/submission/data-availability-policy">Data availability policy</a>
+                    </li>
                     <li>
                     <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                     No author fees</li>

@@ -1,6 +1,12 @@
 CHANGELOG
 =========
 
+v1.0.7
+------
+[2017-05-03]
+
+-   add links to 'at a glance' box
+
 v1.0.6
 ------
 
