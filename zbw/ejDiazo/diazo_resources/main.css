@@ -828,8 +828,10 @@ label.formQuestion {
 }
 #intro ul.if {
   text-align: left;
+  margin-left: -27px;
 }
 #intro ul.if li {
+  margin-top: -8px;
   margin-bottom: 0;
 }
 #intro #intro-logos {

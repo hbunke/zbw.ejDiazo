@@ -44,13 +44,13 @@
                     <li>
                     <i class="fa fa-graduation-cap" aria-hidden="true"></i>
                     No author fees</li>
-                </ul>
-                <ul class="if">
-                    <li><i class="fa fa-certificate" aria-hidden="true"></i>
-                        <a href="journal-metrics">Impact factor</a>: 0.460</li>
-                    <li><i class="fa fa-certificate" aria-hidden="true"></i>
-                        <a href="journal-metrics">5-year impact factor</a>: 0.635</li>
-                </ul>
+            </ul>
+
+            <ul class="if">
+                <li><i class="fa fa-certificate" aria-hidden="true"></i>
+                    &nbsp;<a href="journal-metrics">Impact factor</a></li>
+            </ul>
+
                 <ul style="margin-top: 18px;">
                     <li>Editor: Dennis Snower</li>
                 </ul>

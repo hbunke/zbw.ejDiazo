@@ -1,6 +1,13 @@
 CHANGELOG
 =========
 
+v1.0.8
+------
+[2017-08-07]
+
+-   remove Impact Factor numbers on home
+
+
 v1.0.7
 ------
 [2017-05-03]
